@@ -1,0 +1,56 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\obj\Debug\NBerDal.csprojResolveAssemblyReference.cache
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NBerDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NBerDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\Dapper.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDCommon.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDControls.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDData.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\Model.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NBear.Common.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NBear.Data.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.DDF.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.HPSF.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.HSSF.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.POIFS.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.Util.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\Model.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDCommon.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDCommon.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDControls.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDControls.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\IDData.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\obj\Debug\NBerDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\obj\Debug\NBerDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\NBerDal\bin\Debug\NPOI.xml
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NBerDal.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NBerDal.pdb
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\Dapper.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDCommon.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDControls.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDData.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\Model.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NBear.Common.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NBear.Data.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\Newtonsoft.Json.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.DDF.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.HPSF.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.HSSF.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.POIFS.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.Util.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\Model.pdb
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDCommon.pdb
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDCommon.xml
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDControls.pdb
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDControls.xml
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\IDData.xml
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\Newtonsoft.Json.xml
+E:\测试编码\WebProjectText\NBerDal\bin\Debug\NPOI.xml
+E:\测试编码\WebProjectText\NBerDal\obj\Debug\NBerDal.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\NBerDal\obj\Debug\NBerDal.dll
+E:\测试编码\WebProjectText\NBerDal\obj\Debug\NBerDal.pdb

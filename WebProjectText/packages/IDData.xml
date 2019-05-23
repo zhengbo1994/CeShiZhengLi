@@ -1,0 +1,2032 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDData</name>
+    </assembly>
+    <members>
+        <member name="T:IDData.IDDatabase">
+            <summary>
+            sql通用操作类
+            </summary>
+        </member>
+        <member name="T:IDData.CommitActionHelper">
+            <summary>
+            委托
+            </summary>
+        </member>
+        <member name="M:IDData.CommitActionHelper.ClearAction">
+            <summary>
+            清空委托
+            </summary>
+        </member>
+        <member name="M:IDData.CommitActionHelper.AddCommitAction(IDData.CommitAction)">
+            <summary>
+            添加委托
+            </summary>
+            <param name="comitAction">委托</param>
+        </member>
+        <member name="P:IDData.CommitActionHelper.Action">
+            <summary>
+            委托
+            </summary>
+        </member>
+        <member name="F:IDData.IDDatabase.IDHelper">
+             <summary>
+            帮助类
+             </summary>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(System.String)">
+            <summary>
+            根据Sql语句获取DataSet(使用默认连接字符串)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DataSet set=database.GetDataSet("select AccountID from TAccountName")；
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(IDData.ConnectionName,System.String)">
+            <summary>
+            根据Sql语句获取DataSet(连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DataSet set = database.GetDataSet(IDData.ConnectionName.OperAllowDB, "select AccountID from TAccountName");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取DataSet(事务)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DbTransaction tran=database.BeginTransaction(IDData.ConnectionName.OperAllowDB);
+            DataSet set=database.GetDataSet("select AccountID from TAccountName",tran)；
+            database.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(IDData.ConnectionName,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取DataSet(连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">Sql语句</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DbTransaction tran=database.BeginTransaction(IDData.ConnectionName.OperAllowDB);
+            DataSet set=database.GetDataSet(IDData.ConnectionName.OperAllowDB,"select AccountID from TAccountName",tran)；
+            database.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据Sql语句获取DataSet(输入参数)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="ParType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DataSet set = database.GetDataSet("select AccountID from TAccountName where AccountID=@AccountID",new string[]{"@AccountID"},new DbType[]{DbType.String},new object[]{"123"}, tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据Sql语句获取DataSet(输入参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">Sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DataSet set = database.GetDataSet(IDData.ConnectionName.OperAllowDB, "select AccountID from TAccountName where AccountID=@AccountID",new string[]{"@AccountID"},new DbType[]{DbType.String},new object[]{"123"}, tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取DataSet(输入参数，事务)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DbTransaction tran=database.BeginTransaction(IDData.ConnectionName.OperAllowDB);
+            DataSet set = database.GetDataSet("select AccountID from TAccountName where AccountID=@AccountID",new string[]{"@AccountID"},new DbType[]{DbType.String},new object[]{"123"}, tran);
+            database.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSet(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取DataSet(输入参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DbTransaction tran=database.BeginTransaction(IDData.ConnectionName.OperAllowDB);
+            DataSet set = database.GetDataSet(IDData.ConnectionName.OperAllowDB, "select AccountID from TAccountName where AccountID=@AccountID",new string[]{"@AccountID"},new DbType[]{DbType.String},new object[]{"123"}, tran);
+            database.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(System.String)">
+            <summary>
+            根据存储过程获取DataSet
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DataSet set = database.GetDataSetByStoredProcedure("GetCorpName");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(IDData.ConnectionName,System.String)">
+            <summary>
+            根据存储过程获取DataSet(连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DataSet set = database.GetDataSetByStoredProcedure(IDData.ConnectionName.OperAllowDB,"GetCorpName");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataSet(事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DbTransaction tran= database.BeginTransaction(IDData.ConnectionName.OperAllowDB);
+            DataSet set = database.GetDataSetByStoredProcedure("GetCorpName",tran);
+            database.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(IDData.ConnectionName,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataSet(连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            IDData.IDDatabase database = new IDData.IDDatabase();
+            DbTransaction tran= database.BeginTransaction(IDData.ConnectionName.OperAllowDB);
+            DataSet set = database.GetDataSetByStoredProcedure((IDData.ConnectionName.OperAllowDB,"GetCorpName",tran);
+            database.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据存储过程获取DataSet(输入参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据存储过程获取DataSet(输入参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataSet(输入参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataSet(输入参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            根据存储过程获取DataSet(输入参数，输出参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            根据存储过程获取DataSet(输入参数，输出参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataSet(输入参数，输出参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetDataSetByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataSet(输入参数，输出参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(System.String)">
+            <summary>
+            根据sql语句获取一个值
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(IDData.ConnectionName,System.String)">
+            <summary>
+            根据sql语句获取一个值(指定连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取一个值(事务)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(IDData.ConnectionName,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取一个值(连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">Sql语句</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据Sql语句获取DataSet(输入参数)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="ParType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据Sql语句获取一个值(输入参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">Sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取一个值(输入参数，事务)
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalar(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据Sql语句获取一个值(输入参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(System.String)">
+            <summary>
+            根据存储过程获取一个值
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(IDData.ConnectionName,System.String)">
+            <summary>
+            根据存储过程获取一个值(连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取一个值(事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(IDData.ConnectionName,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取一个值(连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据存储过程获取一个值(输入参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据存储过程获取一个值(输入参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取一个值(输入参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取一个值(输入参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            根据存储过程获取一个值(输入参数，输出参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            根据存储过程获取一个值(输入参数，输出参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取一个值(输入参数，输出参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.GetScalarByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取一个值(输入参数，输出参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(System.String)">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(IDData.ConnectionName,System.String)">
+            <summary>
+            执行存储过程(连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            执行存储过程(事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(IDData.ConnectionName,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            执行存储过程(连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            执行存储过程(输入参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            执行存储过程(输入参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            执行存储过程(输入参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            执行存储过程(输入参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            执行存储过程(输入参数，输出参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            执行存储过程(输入参数，输出参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            执行存储过程(输入参数，输出参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByStoredProcedure(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            执行存储过程(输入参数，输出参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.BatchExecuteNonQuery(System.String)">
+            <summary>
+            批量执行Sql语句
+            </summary>
+            <param name="cmdText">sql语句(多条语句之间用分号连接)</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.BatchExecuteNonQuery(IDData.ConnectionName,System.String)">
+            <summary>
+            批量执行Sql语句
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句(多条语句之间用分号连接)</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(System.String)">
+            <summary>
+            执行Sql语句
+            </summary>
+            <param name="cmdText">Sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(IDData.ConnectionName,System.String)">
+            <summary>
+            执行Sql语句(连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            执行Sql语句(事务)
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(IDData.ConnectionName,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            执行Sql语句(连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            执行Sql语句(输入参数)
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            执行Sql语句(输入参数，连接名)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            执行Sql语句(输入参数，事务)
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQuery(IDData.ConnectionName,System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            执行Sql语句(输入参数，连接名，事务)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <param name="paramesName">输入参数名称</param>
+            <param name="parType">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.ExecuteNonQueryByAdmin(IDData.ConnectionName,System.String)">
+            <summary>
+            执行Sql语句(后台管理时专用)
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="cmdText">sql语句</param>
+            <returns>对于UPDATE、INSERT和DELETE语句，返回值为该命令所影响的行数。对于所有其他类型的语句，返回值为-1。执行失败，返回-2。</returns>
+        </member>
+        <member name="M:IDData.IDDatabase.BeginTransaction(IDData.ConnectionName)">
+            <summary>
+            生成事务
+            </summary>
+            <param name="connName">连接名</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.BeginTransaction(IDData.ConnectionName,System.Data.IsolationLevel)">
+            <summary>
+            生成事务
+            </summary>
+            <param name="connName">连接名</param>
+            <param name="level">事务锁的级别</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.CloseTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            关闭事务
+            </summary>
+            <param name="tran">要关闭的事务</param>
+        </member>
+        <member name="M:IDData.IDDatabase.CommitTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            提交事务(内部释放)
+            </summary>
+            <param name="tran">要提交的事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.CommitTransaction(System.Data.Common.DbTransaction,System.Boolean)">
+            <summary>
+            提交事务(内部释放)
+            </summary>
+            <param name="tran">要提交的事务</param>
+            <param name="DoAction">是否执行事务中附加的委托,默认执行</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDatabase.RollbackAndCloseTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            回滚并关闭事务
+            </summary>
+            <param name="tran">事务</param>
+        </member>
+        <member name="P:IDData.IDDatabase.ExceptionMsg">
+            <summary>
+            异常提示信息
+            </summary>
+        </member>
+        <member name="P:IDData.IDDatabase.OriginalExceptionMsg">
+            <summary>
+            原始异常消息(不友好)
+            </summary>
+        </member>
+        <member name="T:IDData.IDDBOperator`1">
+            <summary>
+            数据库操作类，为业务逻辑类提供操作数据库的方法
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:IDData.IDDBOperator`1.IDGateway">
+            <summary>
+            核心操作类
+            </summary>
+        </member>
+        <member name="F:IDData.IDDBOperator`1.IDHelper">
+            <summary>
+            帮助类
+            </summary>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.#ctor">
+            <summary>
+            默认构造，以实体类所在的命名空间的第一串作为连接字符串的name
+            </summary>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.#ctor(System.String)">
+            <summary>
+            根据连接字符串获取Gateway
+            </summary>
+            <param name="strConnStrName">连接字符串的name</param>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.#ctor(IDData.ConnectionName)">
+            <summary>
+            根据连接字符串获取Gateway
+            </summary>
+            <param name="connName">连接字符串name的枚举</param>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable">
+            <summary>
+            获取包含实体所在表或视图的所有记录的DataTable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.WhereClip)">
+            <summary>
+            根据条件获取包含实体所在表或视图的记录
+            </summary>
+            <param name="where">条件</param>
+            <returns></returns>
+            <example>获取未删除，且指定类别的流程
+            <code>
+            CTFlowView flowView = new CTFlowView();
+            DataTable dtData = flowView.GetDataTable(CTFlow._.IsDelete=="N" &amp;&amp; CTFlow._.FlowTypeID == strFlowTypeID);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.OrderByClip)">
+            <summary>
+            根据排序获取包含实体所在表或视图的记录
+            </summary>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+            <example>获取所有的流程,并以流程ID排序
+            <code>
+            CTFlowView flowView = new CTFlowView();
+            DataTable dtData = flowView.GetDataTable(new OrderByClip("FlowID"));
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            根据条件和排序获取包含实体所在表或视图的记录
+            </summary>
+            <param name="where">条件</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+            <example>获取未删除，且指定类别的流程,并以流程ID排序
+            <code>
+            CTFlowView flowView = new CTFlowView();
+            ExpressionClip[] cols = new ExpressionClip[] { CTFlow._.FlowID, CTFlow._.FlowName };
+            DataTable dtData = flowView.GetDataTable(CTFlow._.IsDelete == "N" &amp;&amp; CTFlow._.FlowTypeID == strFlowTypeID, new OrderByClip("FlowID"));
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.WhereClip,NBear.Common.OrderByClip,System.Int32)">
+            <summary>
+            根据条件和排序获取包含实体所在表或视图的前多少条记录
+            </summary>
+            <param name="where">条件</param>
+            <param name="orderBy">排序</param>
+            <param name="topCount">Top</param>
+            <returns></returns>
+            <example>获取未删除，且指定类别的前10条流程,并以流程ID排序
+            <code>
+            CTFlowView flowView = new CTFlowView();
+            DataTable dtData = flowView.GetDataTable(CTFlow._.IsDelete == "N" &amp;&amp; CTFlow._.FlowTypeID == strFlowTypeID, new OrderByClip("FlowID"), 10);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.WhereClip,NBear.Common.OrderByClip,NBear.Common.ExpressionClip[])">
+            <summary>
+            根据条件和排序获取包含实体所在表或视图的记录
+            </summary>
+            <param name="where">条件</param>
+            <param name="orderBy">排序</param>
+            <param name="PropertyItems">显示的列</param>
+            <returns></returns>
+            <example>获取未删除，且指定类别的流程,并以流程ID排序
+            <code>
+            CTFlowView flowView = new CTFlowView();
+            [CData] DataTable dtData = flowView.GetDataTable(CTFlow._.IsDelete=="N" &amp;&amp; CTFlow._.FlowTypeID == strFlowTypeID,new OrderByClip("FlowID"));[/CData]
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.WhereClip,NBear.Common.OrderByClip,System.Int32,NBear.Common.ExpressionClip[])">
+            <summary>
+            根据条件和排序获取包含实体所在表或视图的前多少条记录
+            </summary>
+            <param name="where">条件</param>
+            <param name="orderBy">排序</param>
+            <param name="PropertyItems">显示的列</param>
+            <param name="topCount">Top</param>
+            <returns></returns>
+            <example>获取未删除，且指定类别的前10条流程,并以流程ID排序
+            <code>
+            CTFlowView flowView = new CTFlowView();
+            DataTable dtData = flowView.GetDataTable(CTFlow._.IsDelete=="N" &amp;&amp; CTFlow._.FlowTypeID == strFlowTypeID,new OrderByClip("FlowID"),10);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTable(NBear.Common.Entity[],NBear.Common.WhereClip[],NBear.Common.WhereClip,NBear.Common.OrderByClip,NBear.Common.ExpressionClip[])">
+            <summary>
+            根据条件和排序获取包含实体所在表或视图的记录
+            </summary>
+            <param name="entitys">自关联的表</param>
+            <param name="on">关联条件</param>
+            <param name="where">条件</param>
+            <param name="orderBy">排序</param>
+            <param name="PropertyItems">显示的列</param>
+            <returns></returns>
+            <example>此方法只支持内联，不建议使用
+            <code>
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetSourseByPrimaryKey(System.Object[],NBear.Common.PropertyItem[])">
+            <summary>
+            根据主键值获取实体对象的部分属性（未指定的属性为空值，所以请不要使用该实体来做更新！）
+            </summary>
+            <param name="strIDs">联合主键值</param>
+            <param name="propertyItems">返回的属性</param>
+            <returns></returns>
+            <example>根据主键获取对应公文的用户ID和公司名。
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc myCheckDoc = mcdView.GetSourseByPrimaryKey(strCDID, new PropertyItem[] { CVMyCheckDoc._.AccountID, CVMyCheckDoc._.CorpName });
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetSourseByPrimaryKey(System.Object,NBear.Common.PropertyItem[])">
+            <summary>
+            根据主键值获取实体对象的部分属性（未指定的属性为空值，所以请不要使用该实体来做更新！）
+            </summary>
+            <param name="strID">主键值</param>
+            <param name="propertyItems">返回的属性</param>
+            <returns></returns>
+            <example>根据主键获取对应公文的用户ID和公司名。
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc myCheckDoc = mcdView.GetSourseByPrimaryKey(strCDID, new PropertyItem[] { CVMyCheckDoc._.AccountID, CVMyCheckDoc._.CorpName });
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetSourseByPrimaryKey(System.Object)">
+             <summary>
+             根据主键值获取实体对象
+             </summary>
+             <param name="strID">主键值</param>
+             <returns></returns>
+             <example>根据主键获取对应公文实体。
+             <code>
+             CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc myCheckDoc = mcdView.GetSourseByPrimaryKey(strCDID);
+             </code>
+             </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetSourseByPrimaryKey(System.Object[])">
+            <summary>
+            根据主键值获取实体对象（用于联合主键）
+            </summary>
+            <param name="arrIDs">主键值列</param>
+            <returns></returns>
+            <example>根据主键获取对应公文实体。
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc myCheckDoc = mcdView.GetSourseByPrimaryKey(strCDID);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetScalar(NBear.Common.WhereClip,NBear.Common.ExpressionClip)">
+            <summary>
+            获取符合条件的的一个值
+            </summary>
+            <param name="where">where条件</param>
+            <param name="propertyItem">显示的列</param>
+            <returns></returns>
+            <example>根据主键获取对应公文实体的公司名称。
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            object corpname= mcdView.GetScalar(strCDID,);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetScalar(NBear.Common.WhereClip,NBear.Common.OrderByClip,NBear.Common.ExpressionClip)">
+            <summary>
+            获取符合条件的一个值
+            </summary>
+            <param name="where">where条件</param>
+            <param name="order">排序规则</param>
+            <param name="propertyItem">显示的列</param>
+            <returns></returns>
+            <example>获取所有未删除的公文中，以公司名称排序为第一位的公文实体的公司名称
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            Object myCheckDoc = mcdView.GetScalar(CVMyCheckDoc._.IsDelete == "N", CVMyCheckDoc._.CorpName.Desc, CVMyCheckDoc._.CorpName);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArray">
+            <summary>
+            获取包含所有实体的数组
+            </summary>
+            <returns></returns>
+            <example>获取所有的公文实体
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc[] myCheckDoc = mcdView.GetArray();
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArray(NBear.Common.OrderByClip)">
+            <summary>
+            获取指定排序的实体数组
+            </summary>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+             <example>获取所有的公文实体，并以公司名称排序
+            <code>
+             CVMyCheckDocView mcdView = new CVMyCheckDocView();
+             CVMyCheckDoc[] myCheckDoc = mcdView.GetArray(CVMyCheckDoc._.CorpName.Desc);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArray(NBear.Common.WhereClip)">
+            <summary>
+            获取指定条件的实体数组
+            </summary>
+            <param name="where">条件</param>
+            <returns></returns>
+            <example>获取所有的未删除的公文实体
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc[] myCheckDoc = mcdView.GetArray(CVMyCheckDoc._.IsDelete=="N");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArray(NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            获取指定条件和排序的实体数组
+            </summary>
+            <param name="where">条件</param>
+            <param name="orderBy">>排序</param>
+            <returns></returns>
+            <example>获取所有的未删除的公文实体，并以公司名称排序
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc[] myCheckDoc = mcdView.GetArray(CVMyCheckDoc._.IsDelete=="N"，CVMyCheckDoc._.CorpName.Desc);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArray(NBear.Common.WhereClip,NBear.Common.OrderByClip,System.Int32)">
+            <summary>
+            获取指定条件和排序的包含前多少个实体的实体数组
+            </summary>
+            <param name="where">条件</param>
+            <param name="orderBy">>排序</param>
+            <param name="topCount">>Top</param>
+            <returns></returns>
+            <example>获取所有的未删除的前10条公文实体，并以公司名称排序
+            <code>
+            CVMyCheckDocView mcdView = new CVMyCheckDocView();
+            CVMyCheckDoc[] myCheckDoc = mcdView.GetArray(CVMyCheckDoc._.IsDelete=="N"，CVMyCheckDoc._.CorpName.Desc，10);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByStoredProcedure(System.String)">
+            <summary>
+            根据存储过程获取实体数组
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID"});
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByStoredProcedure(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取实体数组(事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            //生成事务
+            DbTransaction tran= zbwfmlView.BeginTransaction();
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID",tran);
+            //提交事务
+            zbwfmlView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据存储过程获取实体数组(输入参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] });
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取实体数组(输入参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            //生成事务
+            DbTransaction tran= zbwfmlView.BeginTransaction();
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },tran);
+            //提交事务
+            zbwfmlView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            根据存储过程获取实体数组(输入参数，输出参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+            <example>获取采购流程，和总条数（关于存储过程的使用可以参考分页存储过程）
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int count=0;
+            object[]   OutParames=new object[] { count };
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },new string[] { "@Count" }, new DbType[] {   DbType.Int32 },out OutParames);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取实体数组(输入参数，输出参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>获取采购流程，和总条数（关于存储过程的使用可以参考分页存储过程）
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            //生成事务
+            DbTransaction tran= zbwfmlView.BeginTransaction();
+            int count=0;
+            object[]   OutParames=new object[] { count };
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },new string[] { "@Count" }, new DbType[] {   DbType.Int32 },out OutParames,tran);
+            //提交事务
+            zbwfmlView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByStoredProcedure(System.String)">
+            <summary>
+            根据存储过程获取DataTable
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            DataTable  zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID"});
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByStoredProcedure(System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataTable(事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            //生成事务
+            DbTransaction tran= zbwfmlView.BeginTransaction();
+            DataTable zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID",tran);
+            //提交事务
+            zbwfmlView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[])">
+            <summary>
+            根据存储过程获取DataTable(输入参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            DataTable zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.Data.Common.DbTransaction)">
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            //生成事务
+            DbTransaction tran= zbwfmlView.BeginTransaction();
+            DataTable zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },tran);
+            //提交事务
+            zbwfmlView.CommitTransaction(tran);
+            </code>
+            </example>
+            <summary>
+            根据存储过程获取DataTable(输入参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@)">
+            <summary>
+            根据存储过程获取DataTable(输入参数，输出参数)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <returns></returns>
+            <example>获取采购流程，和总条数（关于存储过程的使用可以参考分页存储过程）
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int count=0;
+            object[]   OutParames=new object[] { count };
+            DataTable zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },new string[] { "@Count" }, new DbType[] {   DbType.Int32 },out OutParames);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByStoredProcedure(System.String,System.String[],System.Data.DbType[],System.Object[],System.String[],System.Data.DbType[],System.Object[]@,System.Data.Common.DbTransaction)">
+            <summary>
+            根据存储过程获取DataTable(输入参数，输出参数，事务)
+            </summary>
+            <param name="storedProcName">存储过程名称</param>
+            <param name="paraNames">输入参数名称</param>
+            <param name="paraTypes">输入参数类型</param>
+            <param name="paraValues">输入参数值</param>
+            <param name="outParaNames">输出参数名称</param>
+            <param name="outParaTypes">输出参数类型</param>
+            <param name="outParaResults">输出参数返回值</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>获取采购流程，和总条数（关于存储过程的使用可以参考分页存储过程）
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            //生成事务
+            DbTransaction tran= zbwfmlView.BeginTransaction();
+            int count=0;
+            object[]   OutParames=new object[] { count };
+            DataTable zbwfmls = zbwfmlView.GetArrayByStoredProcedure("SP3_GetZBWorkFlowModelListByZBWFMID", new string[] { "@ZBWFMID" }, new DbType[] { DbType.String }, new object[] { Request["ZBWFMID"] },new string[] { "@Count" }, new DbType[] {   DbType.Int32 },out OutParames,tran);
+            //提交事务
+            zbwfmlView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的实体数组
+            </summary>
+            <param name="pageindex">页码(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int rowCount=0;
+            int finalPageIndex = 0;
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByPageIndex(1, 10, out rowCount, finalPageIndex);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@,NBear.Common.PropertyItem,System.Double@)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的实体数组，并统计某列
+            </summary>
+            <param name="pageindex">页码(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <param name="item">统计列</param>
+            <param name="sum">统计值</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int rowCount=0;
+            int finalPageIndex=0;
+            double sumRowNo = 0;
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByPageIndex(1, 10, out rowCount, finalPageIndex, CVZBWorkFlowModelList._.RowNo, out sumRowNo);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@,NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的实体数组(where条件,排序规则)
+            </summary>
+            <param name="pageindex">页数(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <param name="where">条件</param>
+            <param name="order">排序规则</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int rowCount=0;
+            int finalPageIndex=0;
+            double sumRowNo = 0;
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByPageIndex(1, 10, out rowCount, finalPageIndex, CVZBWorkFlowModelList._.IsNeedCheck == "Y", CVZBWorkFlowModelList._.SetCheck.Desc);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetArrayByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@,NBear.Common.PropertyItem,System.Double@,NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的实体数组，并统计某列(where条件,排序规则)
+            </summary>
+            <param name="pageindex">页数(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <param name="item">统计列</param>
+            <param name="sum">统计值</param>
+            <param name="where">条件</param>
+            <param name="order">排序规则</param>
+            <returns></returns>
+            <example>获取采购流程
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int rowCount=0;
+            int finalPageIndex=0;
+            double sumRowNo = 0;
+            CVZBWorkFlowModelList[] zbwfmls = zbwfmlView.GetArrayByPageIndex(1, 10, out rowCount, finalPageIndex, CVZBWorkFlowModelList._.RowNo, out  sumRowNo,CVZBWorkFlowModelList._.IsNeedCheck == "Y", CVZBWorkFlowModelList._.SetCheck.Desc);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetPageCount(NBear.Common.WhereClip,System.Int32)">
+            <summary>
+            获取总页数
+            </summary>
+            <param name="where">where条件</param>
+            <param name="pagesize">每页的条数</param>
+            <returns></returns>
+            <example>
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int PageCount =   zbwfmlView.GetPageCount(CVZBWorkFlowModelList._.IsNeedCheck == "Y", 10);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetRecordCount(NBear.Common.WhereClip)">
+            <summary>
+            获取总记录数
+            </summary>
+            <param name="where">where条件</param>
+            <returns></returns>
+            <example>
+            <code>
+            CVZBWorkFlowModelListView zbwfmlView = new CVZBWorkFlowModelListView();
+            int RecordCount= zbwfmlView.GetRecordCount(CVZBWorkFlowModelList._.IsNeedCheck == "Y");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的DataTable
+            </summary>
+            <param name="pageindex">页码(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@,NBear.Common.PropertyItem,System.Double@)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的DataTable，并统计某列
+            </summary>
+            <param name="pageindex">页码(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <param name="item">统计列</param>
+            <param name="sum">统计值</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@,NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的DataTable(where条件,排序规则)
+            </summary>
+            <param name="pageindex">页数(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <param name="where">条件</param>
+            <param name="order">排序规则</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.GetDataTableByPageIndex(System.Int32,System.Int32,System.Int32@,System.Int32@,NBear.Common.PropertyItem,System.Double@,NBear.Common.WhereClip,NBear.Common.OrderByClip)">
+            <summary>
+            获取指定PageIndex、PageSize的某一页的DataTable，并统计某列(where条件,排序规则)
+            </summary>
+            <param name="pageindex">页码(从1开始)</param>
+            <param name="pagesize">每页的条数</param>
+            <param name="rowCount">总记录数</param>
+            <param name="finalPageIndex">最终页码</param>
+            <param name="item">统计列</param>
+            <param name="sum">统计值</param>
+            <param name="where">条件</param>
+            <param name="order">排序规则</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Insert(`0)">
+            <summary>
+            添加实体对象
+            </summary>
+            <param name="sourse">实体对象</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageDealView cmdView = new CTCosMessageDealView();
+            CTCosMessageDeal cmd = new CTCosMessageDeal();
+            cmd.CMDID = CGeneral.GetIDValue();
+            cmd.CMSID = strCMSID;
+            cmd.DealContent = "";
+            bool  bValue = cmdView.Insert(cmd);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Insert(`0,System.Data.Common.DbTransaction)">
+            <summary>
+            添加实体对象(事务)
+            </summary>
+            <param name="sourse">实体对象</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageSend cms = new CTCosMessageSend();
+            DbTransaction tran = cmsView.BeginTransaction();
+            string strCMSID = CGeneral.GetIDValue();
+            cms.CMSID = strCMSID;
+            cms.CMSTitle = txtTitle.Text;
+            cms.CMSType = ddlType.SelectedValue;
+            cms.CMSContent = txtContent.Text;
+            cms.SenderEAID = strEAID;
+            cms.SenderEAName = strEAName;
+            cms.SendDT = DateTime.Now;
+            bool bValue = cmsView.Insert(cms,tran);
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(System.String)">
+            <summary>
+            根据主键删除记录
+            </summary>
+            <param name="key">主键</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            bool bValue = cmsView.Delete(ID);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(System.String[])">
+            <summary>
+            根据联合主键删除记录(默认事务)
+            </summary>
+            <param name="keys">主键集合</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            bool bValue = cmsView.Delete(new string[]{ID1,ID2});
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(System.Data.Common.DbTransaction,System.String[])">
+            <summary>
+            根据联合主键主键删除记录(事务)
+            </summary>
+            <param name="tran">事务</param>
+            <param name="keys">主键集合</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            DbTransaction tran = cmsView.BeginTransaction();
+            bool bValue = cmsView.Delete(tran,new string[]{ID1,ID2});
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(`0)">
+            <summary>
+            删除实体对象对应的数据库表记录
+            </summary>
+            <param name="sourse">实体对象</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageSend  cms = cmsView.GetSourseByPrimaryKey(ID);
+            bool bValue = cmsView.Delete(cms);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(`0,System.Data.Common.DbTransaction)">
+            <summary>
+            删除实体对象对应的数据库表记录(事务)
+            </summary>
+            <param name="sourse">实体对象</param>
+            <param name="tran">事务对象</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageSend  cms = cmsView.GetSourseByPrimaryKey(ID);
+            DbTransaction tran = cmsView.BeginTransaction();
+            bool bValue = cmsView.Delete(tran,cms);
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(NBear.Common.WhereClip)">
+            <summary>
+            根据条件删除实体对象(默认事务)
+            </summary>
+            <param name="where">条件</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            cmdView.Delete(CTCosMessageDeal._.CMDID == "123");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Delete(NBear.Common.WhereClip,System.Data.Common.DbTransaction)">
+            <summary>
+            根据条件删除实体对象(事务)
+            </summary>
+            <param name="where">条件</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            DbTransaction tran = cmsView.BeginTransaction();
+            cmdView.Delete(CTCosMessageDeal._.CMDID == "123",tran);
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.StartPartUpdate(`0)">
+            <summary>
+            将该对象设置为局部更新(在对要更新的属性设置值之前调用本方法)
+            </summary>
+            <param name="sourse">实体对象</param>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageDeal cmd = new CTCosMessageDeal();
+            cmd.CMDID = "123";
+            cmdView.StartPartUpdate(cmd);
+            cmd.IsDelete = "Y";
+            cmdView.UpdatePart(cmd);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.UpdatePart(`0)">
+            <summary>
+            对实体对象进行局部更新(应该在调用StartPartUpdate方法和设置属性的新值之后调用本方法)
+            </summary>
+            <param name="sourse">实体对象</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageDeal cmd = new CTCosMessageDeal();
+            cmd.CMDID = "123";
+            cmdView.StartPartUpdate(cmd);
+            cmd.IsDelete = "Y";
+            cmdView.UpdatePart(cmd);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.UpdatePart(`0,System.Data.Common.DbTransaction)">
+            <summary>
+            对实体对象进行局部更新(应该在调用StartPartUpdate方法和设置属性的新值之后调用本方法),事务
+            </summary>
+            <param name="sourse">实体对象</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            DbTransaction tran = cmsView.BeginTransaction();
+            CTCosMessageDeal cmd = new CTCosMessageDeal();
+            cmd.CMDID = "123";
+            cmdView.StartPartUpdate(cmd);
+            cmd.IsDelete = "Y";
+            cmdView.UpdatePart(cmd,tran);
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Update(NBear.Common.PropertyItem[],System.Object[],NBear.Common.WhereClip)">
+            <summary>
+            对实体对象进行局部更新
+            </summary>
+            <param name="Items">更新的字段</param>
+            <param name="Values">更新的值</param>
+            <param name="where">where条件</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            cmsView.Update(new PropertyItem[] { CTCosMessageDeal._.DealAccountID }, new object[] { "123" }, CTCosMessageDeal._.CMDID == "456");
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Update(NBear.Common.PropertyItem[],System.Object[],NBear.Common.WhereClip,System.Data.Common.DbTransaction)">
+            <summary>
+            对实体对象进行局部更新(事务)
+            </summary>
+            <param name="Items">更新的字段</param>
+            <param name="Values">更新的值</param>
+            <param name="where">where条件</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            DbTransaction tran = cmsView.BeginTransaction();
+            cmsView.Update(new PropertyItem[] { CTCosMessageDeal._.DealAccountID }, new object[] { "123" }, CTCosMessageDeal._.CMDID == "456");
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Update(`0)">
+            <summary>
+            对实体对象的所有属性进行更新
+            </summary>
+            <param name="sourse">实体对象</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageSend  cms = cmsView.GetSourseByPrimaryKey(ID);
+            cmd.IsDelete = "N";
+            cmdView.Update(cms);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.Update(`0,System.Data.Common.DbTransaction)">
+            <summary>
+            对实体对象的所有属性进行更新(事务)
+            </summary>
+            <param name="sourse">实体对象</param>
+            <param name="tran">事务</param>
+            <returns></returns>
+            <example>
+            <code>
+            CTCosMessageSendView cmsView = new CTCosMessageSendView();
+            CTCosMessageSend  cms = cmsView.GetSourseByPrimaryKey(ID);
+            DbTransaction tran = cmsView.BeginTransaction();
+            cmd.IsDelete = "N";
+            cmdView.Update(cms,tran);
+            cmsView.CommitTransaction(tran);
+            </code>
+            </example>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.BeginTransaction">
+            <summary>
+            生成事务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.BeginTransaction(System.Data.IsolationLevel)">
+            <summary>
+            生成事务
+            </summary>
+            <param name="level">事务锁的级别</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.CloseTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            关闭事务
+            </summary>
+            <param name="tran">要关闭的事务</param>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.CommitTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            提交事务(内部释放)
+            </summary>
+            <param name="tran">要提交的事务</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOperator`1.RollbackAndCloseTransaction(System.Data.Common.DbTransaction)">
+            <summary>
+            回滚并关闭事务
+            </summary>
+            <param name="tran">事务</param>
+        </member>
+        <member name="P:IDData.IDDBOperator`1.ExceptionMsg">
+            <summary>
+            异常提示信息(友好)
+            </summary>
+        </member>
+        <member name="P:IDData.IDDBOperator`1.OriginalExceptionMsg">
+            <summary>
+            原始异常消息(不友好)
+            </summary>
+        </member>
+        <member name="T:IDData.CommitAction">
+            <summary>
+            委托
+            </summary>
+        </member>
+        <member name="T:IDData.IDLogManager">
+            <summary>
+            数据库日志操作类
+            </summary>
+        </member>
+        <member name="M:IDData.IDLogManager.WriteLog(System.String,System.String)">
+            <summary>
+            写日志
+            </summary>
+            <param name="strSql">跟踪Sql</param>
+            <param name="strLogMsg">日志消息</param>
+        </member>
+        <member name="P:IDData.IDLogManager.LogPath">
+            <summary>
+            日志文件的路径
+            </summary>
+        </member>
+        <member name="T:IDData.IDLogMsg">
+            <summary>
+            基本Sql日志消息
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.InsertFail">
+            <summary>
+            添加记录失败
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.DeleteFail">
+            <summary>
+            删除记录失败
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.UpdateFail">
+            <summary>
+            修改记录失败
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.UpdatePartError">
+            <summary>
+            局部更新记录时方法错误
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.GetDataFail">
+            <summary>
+            获取数据失败
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.ExecuteFail">
+            <summary>
+            操作失败
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.ExecuteBatchFail">
+            <summary>
+            批量操作失败
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.LogPathInvalid">
+            <summary>
+            未配置日志文件路径
+            </summary>
+        </member>
+        <member name="P:IDData.IDLogMsg.RowIsNotExist">
+            <summary>
+            记录不存在
+            </summary>
+        </member>
+        <member name="T:IDData.IDDBOpratorHelper">
+            <summary>
+            数据库操作辅助类，提供数据库操作对象、记录Sql日志
+            </summary>
+        </member>
+        <member name="M:IDData.IDDBOpratorHelper.GetGateway(System.String)">
+            <summary>
+            获取Gateway操作类对象
+            </summary>
+            <param name="strConnStrName">连接字符串名</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOpratorHelper.GetGateway(IDData.ConnectionName)">
+            <summary>
+            获取Gateway操作类对象
+            </summary>
+            <param name="connName">连接字符串name的枚举</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDData.IDDBOpratorHelper.LogSQL(System.String)">
+            <summary>
+            记录跟踪的SQL
+            </summary>
+            <param name="strLogMsg"></param>
+        </member>
+        <member name="M:IDData.IDDBOpratorHelper.WriteLog(System.String)">
+            <summary>
+            记录异常日志
+            </summary>
+            <param name="strLogMsg">异常消息</param>
+        </member>
+        <member name="M:IDData.IDDBOpratorHelper.WriteLog(System.String,System.String)">
+            <summary>
+            记录错误日志
+            </summary>
+            <param name="strLogMsg">异常消息</param>
+            <param name="strFriendlyMsg">较为友好的提示消息</param>
+        </member>
+        <member name="M:IDData.IDDBOpratorHelper.GetIP4Address(System.Web.HttpRequest)">
+            <summary>
+            获取IPv4地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IDData.IDDBOpratorHelper.TraceSql">
+            <summary>
+            跟踪Sql
+            </summary>
+        </member>
+        <member name="P:IDData.IDDBOpratorHelper.ExceptionMsg">
+            <summary>
+            异常提示信息(友好)
+            </summary>
+        </member>
+        <member name="P:IDData.IDDBOpratorHelper.OriginalExceptionMsg">
+            <summary>
+            原始异常消息(不友好)
+            </summary>
+        </member>
+        <member name="P:IDData.IDDBOpratorHelper.UserAccountID">
+            <summary>
+            获取用户账号ID
+            </summary>
+        </member>
+        <member name="T:IDData.ConnectionName">
+            <summary>
+            配置文件中连接字符串name的枚举
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.Default">
+            <summary>
+            默认数据库
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.OperAllowDB">
+            <summary>
+            系统管理
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.CheckFlowDB">
+            <summary>
+            流程中心
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.IDOADB">
+            <summary>
+            协同办公
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.KnowledgeDB">
+            <summary>
+            知识管理
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.CCMPDB">
+            <summary>
+            成本控制
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.ZBiddingDB">
+            <summary>
+            采购招投标
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.CorporationPortDB">
+            <summary>
+            网上招投标
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.POMDB">
+            <summary>
+            项目运营
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.TenancyDB">
+            <summary>
+            租赁
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.UserDefinedDB">
+            <summary>
+            自定义表单
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.CRMDB">
+            <summary>
+            CRM
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.HRDB">
+            <summary>
+            绩效
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.CTSIMDB">
+            <summary>
+            投资管理
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.ProductDB">
+            <summary>
+            产品库
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.BMDB">
+            <summary>
+            预算管理
+            </summary>
+        </member>
+        <member name="F:IDData.ConnectionName.IADB">
+            <summary>
+            投资分析
+            </summary>
+        </member>
+    </members>
+</doc>

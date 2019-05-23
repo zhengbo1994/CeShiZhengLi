@@ -1,0 +1,178 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\WebApi.dll.config
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\WebApi.XML
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\WebApi.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\WebApi.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Antlr3.Runtime.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\EntityFramework.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Owin.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Swashbuckle.Core.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Helpers.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Http.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Http.Owin.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Mvc.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Optimization.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Razor.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.WebPages.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\WebActivatorEx.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\WebGrease.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Helpers.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Http.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Mvc.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Optimization.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Razor.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.WebPages.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Antlr3.Runtime.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\EntityFramework.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\System.Web.Http.Owin.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\bin\zh-Hans\System.Web.Http.Owin.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\obj\Debug\WebApi.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\obj\Debug\WebApi.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\WebApi\bin\WebApi.dll.config
+E:\测试编码\WebProjectText\WebApi\bin\WebApi.XML
+E:\测试编码\WebProjectText\WebApi\bin\WebApi.dll
+E:\测试编码\WebProjectText\WebApi\bin\WebApi.pdb
+E:\测试编码\WebProjectText\WebApi\bin\Antlr3.Runtime.dll
+E:\测试编码\WebProjectText\WebApi\bin\EntityFramework.dll
+E:\测试编码\WebProjectText\WebApi\bin\EntityFramework.SqlServer.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Cookies.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Facebook.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Google.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.OAuth.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Twitter.dll
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\测试编码\WebProjectText\WebApi\bin\Newtonsoft.Json.dll
+E:\测试编码\WebProjectText\WebApi\bin\Owin.dll
+E:\测试编码\WebProjectText\WebApi\bin\Swashbuckle.Core.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Net.Http.Formatting.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Helpers.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Http.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Http.Owin.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Http.WebHost.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Mvc.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Optimization.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Razor.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.WebPages.dll
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\测试编码\WebProjectText\WebApi\bin\WebActivatorEx.dll
+E:\测试编码\WebProjectText\WebApi\bin\WebGrease.dll
+E:\测试编码\WebProjectText\WebApi\bin\Newtonsoft.Json.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Net.Http.Formatting.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Helpers.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Http.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Http.WebHost.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Mvc.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Optimization.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Razor.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.WebPages.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\测试编码\WebProjectText\WebApi\bin\Antlr3.Runtime.pdb
+E:\测试编码\WebProjectText\WebApi\bin\EntityFramework.xml
+E:\测试编码\WebProjectText\WebApi\bin\EntityFramework.SqlServer.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Facebook.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Cookies.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Google.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.Twitter.xml
+E:\测试编码\WebProjectText\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\测试编码\WebProjectText\WebApi\bin\System.Web.Http.Owin.xml
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Http.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Optimization.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\EntityFramework.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\测试编码\WebProjectText\WebApi\bin\zh-Hans\System.Web.Http.Owin.resources.dll
+E:\测试编码\WebProjectText\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\WebApi\obj\Debug\WebApi.dll
+E:\测试编码\WebProjectText\WebApi\obj\Debug\WebApi.pdb

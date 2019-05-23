@@ -1,0 +1,58 @@
+﻿<!--由模板自动生成--> 
+<table class='idtbfix deepborder' style='width:100%;height:100%;'><tr><td class='deepborder up_btntd up_bdbm' style="height:auto"><span id='{$T.UploadID}_UpBtn'></span><input name='ctl00$FormArea${$T.UploadID}' type='hidden' value="" /><input name='ctl00$FormArea${$T.UploadID}' type='hidden' value="" /><input name='ctl00$FormArea${$T.UploadID}' type='hidden' value="" /><input name='ctl00$FormArea${$T.UploadID}' type='hidden' value="" /><input name='ctl00$FormArea${$T.UploadID}' type='hidden' value="" /><input name='ctl00$FormArea${$T.UploadID}' type='hidden' value="" /></td><td class='deepborder idtd up_bdbm' style="height:auto;"><table id='{$T.UploadID}' class='up_files'></table></td></tr><tr id='{$T.UploadID}_Prgs' style='display:none'><td colspan='2' class='deepborder'><table id='{$T.UploadID}_PrgsTgt' class='idtb'></table></td></tr></table>
+
+{#foreach $T.ReferenceJS as JS} 
+    <script type='text/javascript' src='{$T.JS}'></script>
+{#/for}
+
+<script type='text/javascript'>
+    var swfu_{$T.UploadID};
+    var swfuObject='swfu_{$T.UploadID}';
+    function initSwfU_{$T.UploadID}(){#ldelim}
+    swfu_{$T.UploadID}=new SWFUpload(
+    {#ldelim}
+    flash_url: '{$T.FlashUrl}',
+    upload_url: '{$T.UploadUrl}',
+    post_params: {#ldelim}PathType:'{$T.PathType}'{#rdelim},
+    file_types: '{$T.FileTypes}',
+    file_types_description: '{$T.FileTypesDescription}',
+    file_size_limit: '{$T.MaxLength}MB',
+    file_upload_limit: {$T.MaxCount},
+    file_queue_limit: {$T.MaxCount},
+    custom_settings:
+    {#ldelim}
+    mode: '{$T.UploadMode}',
+    userID: '{$T.UserID}',
+    userName: '{$T.UserName}',
+    progressTarget: '{$T.UploadID}_PrgsTgt',
+    theme: '{$T.Theme}',
+    progressRow: getObj('{$T.UploadID}_Prgs'),
+    filesTable: getObj('{$T.UploadID}')
+    {#rdelim},
+    debug: false,
+    button_image_url: '{$T.ButtonImgUrl}',
+    button_width: '60',
+    button_height: getThemeVersion(getTheme())==2014?'24':'20',
+    button_placeholder_id: '{$T.UploadID}_UpBtn',
+    swfupload_loaded_handler: flashReady,
+    file_queued_handler: fileQueued,
+    file_queue_error_handler: fileQueueError,
+    upload_start_handler: uploadStart,
+    upload_progress_handler: uploadProgress,
+    upload_error_handler: uploadError,
+    upload_success_handler: uploadSuccess,
+    upload_complete_handler: uploadComplete,
+    file_dialog_complete_handler: fileDialogComplete
+    {#rdelim}); 
+    formatIDFileSize('{$T.UploadID}',3); 
+    window['UploadSetting_{$T.UploadID}']=swfu_{$T.UploadID};  
+    
+    {#foreach $T.InitFiles as InitFile}     
+    appendFileByManual('{$T.UploadID}',{#ldelim}'id':'SWFUpload_2_0',creationdate:'{$T.InitFile.CreationDate}',modificationdate:'{$T.InitFile.ModificationDate}',name:'{$T.InitFile.Name}','filestatus':-4,type:'{$T.InitFile.Type}',size:{$T.InitFile.Size}{#rdelim},'{$T.InitFile.EntireName}'); 
+    {#/for}
+
+    {#rdelim}
+
+    execFuns(initSwfU_{$T.UploadID});   
+</script>
+<!--end 由模板自动生成-->

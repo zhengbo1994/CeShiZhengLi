@@ -1,0 +1,7 @@
+﻿#divExamResultCheck_CheckByExamPlan input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}
+
+#divExamResultAduit_CheckByEmployee input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}

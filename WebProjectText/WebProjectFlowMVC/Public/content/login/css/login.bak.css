@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: 0;
+	font-family: "微软雅黑";
+	font-size:16px;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background:#a1e5d1;
+}
+.container{
+	width:1100px;
+	height:468px;
+	margin:0 auto;
+}
+.content_left{
+	width:566px;
+	height:439px;
+	float:left;
+	background:url(../images/con_left_03.jpg) no-repeat;
+	margin-top:88px;
+}
+.content_right{
+	width:464px;
+	height:390px;
+	background:#fff;
+	border-radius:10px;
+	float:right;
+	margin-top:126px;
+}
+.title{
+	text-align:center;
+	padding-top:14px;
+	padding-bottom:14px;
+}
+.content_form{
+	width:338px;
+	height:300px;
+	margin:0 auto;
+}
+.username{
+	width:330px;
+	height:45px;
+	padding-left:6px;
+	border:1px solid #d8d8d8;
+	border-radius:3px;
+	margin-bottom:22px;
+}.username.yzm {
+	width: 140px;
+	float:left;
+}
+
+.content_yzm{
+	width: 180px;
+	height: 45px;
+	background: #e7e7e7;
+	display: block;
+	float:right;
+	color:#a7a7b9;
+	line-height:45px;
+	text-align:center;
+	font-size:14px
+}
+.content_btn{
+	width:338px;
+	height:50px;
+	background:#9ed04d;
+	border-radius:6px;
+	color:#fff;
+}
+.content_btn:hover{
+	background: #76bf48;
+	cursor: pointer;
+}

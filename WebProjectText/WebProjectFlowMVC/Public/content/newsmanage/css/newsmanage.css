@@ -1,0 +1,8 @@
+﻿#mdlNewsManage_DetailInfo .modal-dialog {
+    width: 1000px;
+}
+
+.wysiwyg-editor {
+    min-height: 450px;
+    max-height: 600px;
+}

@@ -1,0 +1,27 @@
+﻿#divCertificatePrintOnline_CertificatePrintOnlineInfo input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}
+
+.print-box {
+    position: relative;
+    z-index: 99;
+}
+
+.print-content {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+.print-foot {
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+}
+
+.print-main {
+    display: inline-block;
+    position: relative;
+    width: 684px;
+    height: 934px;
+}

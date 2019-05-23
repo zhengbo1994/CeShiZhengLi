@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <title>测试系统</title>
+
+    <!-- bootstrap & fontawesome -->
+    <link href="~/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- ace styles -->
+    <link href="~/Public/ace/css/ace.css" rel="stylesheet" />
+
+    <!-- jqgrid styles -->
+    <link href="~/Public/jqgrid/css/ui.jqgrid-bootstrap.css" rel="stylesheet" />
+
+    <link href="~/Public/content/shared/css/main.css" rel="stylesheet" />
+
+    <!--[if lte IE 9]>
+        <link href="~/Public/ace/css/ace-part2.css" rel="stylesheet" />
+        <link href="~/Public/ace/css/ace-ie.css" rel="stylesheet" />
+        <script src="~/Public/ace/js/ace-extra.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <script src="~/Public/js-plug/js/html5shiv.js"></script>
+        <script src="~/Public/js-plug/js/respond.js"></script>
+    <![endif]-->
+    @RenderSection("styles", required: false)
+</head>
+
+<body class="no-skin">
+
+    @RenderBody()
+
+    <script type="text/javascript">
+        if ('ontouchstart' in document.documentElement) document.write("<script src='~/Public/jquery/js/jquery.mobile.custom.js'>" + "<" + "/ script>");
+    </script>
+
+    <script src="~/Public/jquery/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Public/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/Public/jqgrid/js/jquery.jqGrid.min.js"></script>
+    <script src="~/Public/jqgrid/js/grid.locale-cn.js"></script>
+    <script src="~/Public/jquery-form/jquery.form.min.js"></script>
+
+    <script src="~/Public/base/jsFn.js"></script>
+    <script src="~/Public/base/jsApp.js"></script>
+
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Public/ace/js/ace.js"></script>
+</body>
+</html>

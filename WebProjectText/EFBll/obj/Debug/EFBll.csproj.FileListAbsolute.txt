@@ -1,0 +1,72 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\EFBll.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\EFBll.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\EFDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Model.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\EntityFramework.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\EFDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Model.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\EntityFramework.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\obj\Debug\EFBll.csprojResolveAssemblyReference.cache
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\obj\Debug\EFBll.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\obj\Debug\EFBll.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Common.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Common.pdb
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\log4net.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\log4net.xml
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\SqlDal.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\MySql.Data.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\System.Data.SQLite.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\SqlDal.pdb
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\EFBll\bin\Debug\System.Data.SQLite.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.OOXML.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.OOXML.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\EFBll\bin\Debug\Newtonsoft.Json.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\EFBll.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\EFBll.pdb
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Common.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\EFDal.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Model.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Newtonsoft.Json.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\log4net.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.OOXML.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\EntityFramework.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\SqlDal.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\MySql.Data.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.OpenXml4Net.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\System.Data.SQLite.dll
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Common.pdb
+E:\测试编码\WebProjectText\EFBll\bin\Debug\EFDal.pdb
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Model.pdb
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Newtonsoft.Json.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\log4net.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.OOXML.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\EntityFramework.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\SqlDal.pdb
+E:\测试编码\WebProjectText\EFBll\bin\Debug\NPOI.OpenXml4Net.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\System.Data.SQLite.xml
+E:\测试编码\WebProjectText\EFBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\测试编码\WebProjectText\EFBll\obj\Debug\EFBll.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\EFBll\obj\Debug\EFBll.dll
+E:\测试编码\WebProjectText\EFBll\obj\Debug\EFBll.pdb

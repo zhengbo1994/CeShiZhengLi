@@ -1,0 +1,4 @@
+Install-Package EntityFramework -ProjectName 'EFDal'
+Enable-Migrations -ContextTypeName 'DatabaseContext' -ProjectName 'EFDal' -StartUpProjectName 'WebProjectFlowMVC'  -ConnectionStringName 'DbContext' -Force
+Add-Migration -Name "Update"  -ProjectName "EFDal" -StartUpProjectName "WebProjectFlowMVC"  -ConnectionStringName 'DbContext'
+Update-Database -ProjectName "EFDal" -StartUpProjectName "WebProjectFlowMVC"  -ConnectionStringName 'DbContext'

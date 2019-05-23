@@ -1,0 +1,22 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\Model.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\Model.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\EntityFramework.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\EntityFramework.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\obj\Debug\Model.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\Model\obj\Debug\Model.pdb
+E:\测试编码\WebProjectText\Model\bin\Debug\Model.dll
+E:\测试编码\WebProjectText\Model\bin\Debug\Model.pdb
+E:\测试编码\WebProjectText\Model\bin\Debug\EntityFramework.dll
+E:\测试编码\WebProjectText\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\测试编码\WebProjectText\Model\bin\Debug\EntityFramework.xml
+E:\测试编码\WebProjectText\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\测试编码\WebProjectText\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\测试编码\WebProjectText\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\测试编码\WebProjectText\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\Model\obj\Debug\Model.dll
+E:\测试编码\WebProjectText\Model\obj\Debug\Model.pdb

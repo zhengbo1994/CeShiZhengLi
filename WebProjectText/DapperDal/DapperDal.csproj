@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECCDFD7F-2DCD-4BC2-BF64-84A14EAE8D0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DapperDal</RootNamespace>
+    <AssemblyName>DapperDal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLinq">
+      <HintPath>..\packages\SQLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLinq.Dapper">
+      <HintPath>..\packages\SQLinq.Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="IBaseService.cs" />
+    <Compile Include="MySqlDatabase.cs" />
+    <Compile Include="OracleDatabase.cs" />
+    <Compile Include="PrimaryKeyAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlDatabase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{15421b04-5333-4f64-ad96-e425c781473c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlDal\SqlDal.csproj">
+      <Project>{8a4326f0-df98-4998-a445-2fd38140c243}</Project>
+      <Name>SqlDal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

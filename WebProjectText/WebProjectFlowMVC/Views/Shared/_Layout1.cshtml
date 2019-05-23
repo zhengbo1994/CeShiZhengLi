@@ -1,0 +1,29 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@(string.IsNullOrEmpty(ViewBag.Title) ? "测试系统" : ViewBag.Title)</title>
+    <link href="~/Public/content/shared/css/main.css" rel="stylesheet" />
+    <link href="~/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Public/content/login/css/index.css" rel="stylesheet" />
+
+    @RenderSection("styles", required: false)
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div class="con-wrap">
+        @RenderBody()
+    </div>
+    <div class="fgx"></div>
+    <div class="footer">
+        <p>地址：武汉市武昌区</p>
+        <p><a target="_blank" href="http://www.whfst.net/">技术支持：技术有限公司</a> 咨询电话：027-67120973</p>
+    </div>
+    <script src="~/Public/jquery/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Public/base/jsFn.js"></script>
+    <script src="~/Public/base/jsApp.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

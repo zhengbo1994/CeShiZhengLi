@@ -1,0 +1,66 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\RepositoryDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\RepositoryDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Common.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Model.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\SqlDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\log4net.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\MySql.Data.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\System.Data.SQLite.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Common.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Model.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\SqlDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\log4net.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\System.Data.SQLite.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\obj\Debug\RepositoryDal.csprojResolveAssemblyReference.cache
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\obj\Debug\RepositoryDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\obj\Debug\RepositoryDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.OOXML.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.OOXML.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\RepositoryDal\bin\Debug\Newtonsoft.Json.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\RepositoryDal.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\RepositoryDal.pdb
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Common.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Model.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\SqlDal.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Newtonsoft.Json.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\log4net.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.OOXML.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\MySql.Data.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\System.Data.SQLite.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.OpenXml4Net.dll
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Common.pdb
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Model.pdb
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\SqlDal.pdb
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\Newtonsoft.Json.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\log4net.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.OOXML.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\System.Data.SQLite.xml
+E:\测试编码\WebProjectText\RepositoryDal\bin\Debug\NPOI.OpenXml4Net.xml
+E:\测试编码\WebProjectText\RepositoryDal\obj\Debug\RepositoryDal.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\RepositoryDal\obj\Debug\RepositoryDal.dll
+E:\测试编码\WebProjectText\RepositoryDal\obj\Debug\RepositoryDal.pdb

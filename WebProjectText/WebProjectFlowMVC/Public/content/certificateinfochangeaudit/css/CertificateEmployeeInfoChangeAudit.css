@@ -1,0 +1,6 @@
+﻿#divCertificateEmployeeInfoChangeAudit_CertificateEmployeeInfoChangeInfo input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}
+#divCertificateEmployeeInfoChangeAudit_CheckInfo input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}

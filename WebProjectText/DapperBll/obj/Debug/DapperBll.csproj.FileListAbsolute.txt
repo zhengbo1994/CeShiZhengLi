@@ -1,0 +1,34 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\DapperBll.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\DapperBll.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\DapperDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\Model.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\DapperDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\Model.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\obj\Debug\DapperBll.csprojResolveAssemblyReference.cache
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\obj\Debug\DapperBll.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\DapperBll\obj\Debug\DapperBll.pdb
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\SqlDal.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\SQLinq.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\SQLinq.Dapper.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\MySql.Data.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\System.Data.SQLite.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\SqlDal.pdb
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\DapperBll\bin\Debug\System.Data.SQLite.xml
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\DapperBll.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\DapperBll.pdb
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\DapperDal.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\Model.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\SqlDal.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\MySql.Data.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\SQLinq.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\SQLinq.Dapper.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\System.Data.SQLite.dll
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\DapperDal.pdb
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\Model.pdb
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\SqlDal.pdb
+E:\测试编码\WebProjectText\DapperBll\bin\Debug\System.Data.SQLite.xml
+E:\测试编码\WebProjectText\DapperBll\obj\Debug\DapperBll.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\DapperBll\obj\Debug\DapperBll.dll
+E:\测试编码\WebProjectText\DapperBll\obj\Debug\DapperBll.pdb

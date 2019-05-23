@@ -1,0 +1,26 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\SqlDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\SqlDal.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\SqlDal\obj\Debug\SqlDal.csprojResolveAssemblyReference.cache
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\SqlDal\obj\Debug\SqlDal.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\SqlDal\obj\Debug\SqlDal.pdb
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\MySql.Data.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\System.Data.SQLite.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\System.Data.SQLite.xml
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\EntityFramework.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\EntityFramework.xml
+C:\Users\SAPI-63\documents\visual studio 2013\Projects\WebProjectText\SqlDal\bin\Debug\EntityFramework.SqlServer.xml
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\SqlDal.dll
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\SqlDal.pdb
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\EntityFramework.dll
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\EntityFramework.SqlServer.dll
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\MySql.Data.dll
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\System.Data.SQLite.dll
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\EntityFramework.xml
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\EntityFramework.SqlServer.xml
+E:\测试编码\WebProjectText\SqlDal\bin\Debug\System.Data.SQLite.xml
+E:\测试编码\WebProjectText\SqlDal\obj\Debug\SqlDal.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\SqlDal\obj\Debug\SqlDal.dll
+E:\测试编码\WebProjectText\SqlDal\obj\Debug\SqlDal.pdb

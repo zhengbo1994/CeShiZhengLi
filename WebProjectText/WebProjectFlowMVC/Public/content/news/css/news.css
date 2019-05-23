@@ -1,0 +1,21 @@
+﻿.list {
+    min-height: 600px;
+}
+
+    .list ul li {
+        position: relative;
+        line-height: 41px;
+        height: 40px;
+        border-bottom: 1px dashed #d8d8d8;
+        background: url(/Public/content/login/images/list_tb_03.png) no-repeat 10px center;
+        padding-left: 20px;
+    }
+
+        .list ul li .data {
+            position: absolute;
+            right: 20px;
+        }
+
+.center {
+    text-align: center;
+}

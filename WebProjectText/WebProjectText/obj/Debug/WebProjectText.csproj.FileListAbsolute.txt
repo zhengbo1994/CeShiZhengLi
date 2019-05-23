@@ -1,0 +1,12 @@
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebProjectText\bin\WebProjectText.dll.config
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebProjectText\bin\WebProjectText.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebProjectText\bin\WebProjectText.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebProjectText\obj\Debug\WebProjectText.dll
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebProjectText\obj\Debug\WebProjectText.pdb
+C:\Users\SAPI-63\Documents\Visual Studio 2013\Projects\WebProjectText\WebProjectText\obj\Debug\WebProjectText.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\WebProjectText\bin\WebProjectText.dll.config
+E:\测试编码\WebProjectText\WebProjectText\bin\WebProjectText.dll
+E:\测试编码\WebProjectText\WebProjectText\bin\WebProjectText.pdb
+E:\测试编码\WebProjectText\WebProjectText\obj\Debug\WebProjectText.csprojResolveAssemblyReference.cache
+E:\测试编码\WebProjectText\WebProjectText\obj\Debug\WebProjectText.dll
+E:\测试编码\WebProjectText\WebProjectText\obj\Debug\WebProjectText.pdb

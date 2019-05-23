@@ -1,0 +1,3857 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDControls</name>
+    </assembly>
+    <members>
+        <member name="T:IDControls.ButtonType">
+            <summary>
+            按钮类型
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.None">
+            <summary>
+            无图片
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Default">
+            <summary>
+            默认图片
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Help">
+            <summary>
+            帮助
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.DownList">
+            <summary>
+            下拉
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Confirm">
+            <summary>
+            确定
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Add">
+            <summary>
+            新增
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.AddSibling">
+            <summary>
+            新增同级
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.AddChild">
+            <summary>
+            新增下级
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Edit">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Save">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.SaveClose">
+            <summary>
+            提交并关闭
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.SaveOpen">
+            <summary>
+            提交并新建
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.SaveTemplate">
+            <summary>
+            存模板
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.SaveCase">
+            <summary>
+            存案例
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Print">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Import">
+            <summary>
+            导入
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Export">
+            <summary>
+            导出
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Find">
+            <summary>
+            搜索
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Lookup">
+            <summary>
+            选择
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Choose">
+            <summary>
+            确定选择
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ChooseClose">
+            <summary>
+            确定选择并关闭
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Publish">
+            <summary>
+            发布
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Resume">
+            <summary>
+            还原
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Revert">
+            <summary>
+            还原(与数据库权限编号统一)
+            丁欢
+            2013-03-23
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Setting">
+            <summary>
+            设置
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Refresh">
+            <summary>
+            刷新
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Move">
+            <summary>
+            移动
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Startup">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Decompound">
+            <summary>
+            分解
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Progress">
+            <summary>
+            进度
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Quality">
+            <summary>
+            质量
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Security">
+            <summary>
+            安全
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.CheckList">
+            <summary>
+            检查
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Appraise">
+            <summary>
+            评价
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Report">
+            <summary>
+            报告
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.SumUp">
+            <summary>
+            总结
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Attention">
+            <summary>
+            关注
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Aware">
+            <summary>
+            知会
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Union">
+            <summary>
+            合并
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Return">
+            <summary>
+            返回
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Revoke">
+            <summary>
+            撤销
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Delegate">
+            <summary>
+            委托
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Request">
+            <summary>
+            申请
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Jump">
+            <summary>
+            跳过
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Previous">
+            <summary>
+            上一步
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Next">
+            <summary>
+            下一步
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Manage">
+            <summary>
+            管理
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Revision">
+            <summary>
+            环节调整
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Allot">
+            <summary>
+            拆分
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Download">
+            <summary>
+            下载
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Upload">
+            <summary>
+            上传
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Calculator">
+            <summary>
+            计算
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Date">
+            <summary>
+            选择日期
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Plus">
+            <summary>
+            加
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Minus">
+            <summary>
+            减
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.NavUp">
+            <summary>
+            向上、收起
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.NavDown">
+            <summary>
+            向下、展开
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Open">
+            <summary>
+            打开
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Relation">
+            <summary>
+            关联
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.History">
+            <summary>
+            历史记录
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.Capture">
+            <summary>
+            拍照，抓取
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ThirdCheck">
+            <summary>
+            第三方审批
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ThirdView">
+            <summary>
+            第三方审批表单
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ThirdShowEntry">
+            <summary>
+            第三方流程步骤
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ThirdEntry">
+            <summary>
+            第三方流程步骤
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ViewHistoryVersion">
+            <summary>
+            历史版本
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.VersionCompare">
+            <summary>
+            版本对比
+            </summary>
+            [EnumAttached("版本对比")]
+        </member>
+        <member name="F:IDControls.ButtonType.ViewModifyVersion">
+            <summary>
+            编辑查看
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.ViewFormalVersion">
+            <summary>
+            正式版查看
+            </summary>
+        </member>
+        <member name="F:IDControls.ButtonType.PressDo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IDControls.AreaState">
+            <summary>
+            内容分区控件的状态
+            </summary>
+        </member>
+        <member name="F:IDControls.AreaState.Collapse">
+            <summary>
+            收缩
+            </summary>
+        </member>
+        <member name="F:IDControls.AreaState.Expand">
+            <summary>
+            展开
+            </summary>
+        </member>
+        <member name="T:IDControls.SelectDDLType">
+            <summary>
+            自定义选择框的类型
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.Corp">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.Dept">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.Project">
+            <summary>
+            项目
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.ContractClass">
+            <summary>
+            合同类别
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.DCReason">
+            <summary>
+            其他变更提出原因
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.ReportModule">
+            <summary>
+            报表模块
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLType.TreeProject">
+            <summary>
+            树形项目
+            </summary>
+        </member>
+        <member name="T:IDControls.SelectDDLDataRangeType">
+            <summary>
+            选择框绑定的数据来源
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLDataRangeType.None">
+            <summary>
+            未绑定
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLDataRangeType.Mine">
+            <summary>
+            我的
+            </summary>
+        </member>
+        <member name="F:IDControls.SelectDDLDataRangeType.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="T:IDControls.UploadMode">
+            <summary>
+            上传控件操作模式
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadMode.Upload">
+            <summary>
+            上传
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadMode.Browse">
+            <summary>
+            查看
+            </summary>
+        </member>
+        <member name="T:IDControls.UploadOfficeMode">
+            <summary>
+            上传控件中Office文件操作模式
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadOfficeMode.None">
+            <summary>
+            上传
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadOfficeMode.Browse">
+            <summary>
+            查看
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadOfficeMode.Editable">
+            <summary>
+            编辑
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadOfficeMode.BrowsePrint">
+            <summary>
+            查看(带打印)
+            </summary>
+        </member>
+        <member name="T:IDControls.UploadFileType">
+            <summary>
+            附件类型
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.JobEarlyWarningProgram">
+            <summary>
+            平台-工作预警方案
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CustomReport">
+            <summary>
+            平台-自定义报表
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DocModel">
+            <summary>
+            正文文档
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Customize">
+            <summary>
+            客户定制(如登录页图片、Logo图片等)
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Doc">
+            <summary>
+            OA-公文管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Cachet">
+            <summary>
+            OA-证章管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Asset">
+            <summary>
+            OA-资产管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Consume">
+            <summary>
+            OA-用品申领
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Purchase">
+            <summary>
+            OA-用品申购
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Maintenace">
+            <summary>
+            OA-用品维护
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Vendition">
+            <summary>
+            0A-营销用品
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Bylaw">
+            <summary>
+            OA-制度管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CorpFile">
+            <summary>
+            OA-档案管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Boardroom">
+            <summary>
+            OA-会议室管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Leave">
+            <summary>
+            OA-请假管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.OutWork">
+            <summary>
+            OA-出差管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.RedHead">
+            <summary>
+            OA-水电红头文件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Receipt">
+            <summary>
+            OA-水电红头文件-收文
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Mission">
+            <summary>
+            OA-计划任务
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MissionPlan">
+            <summary>
+            OA-计划任务
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MissionCheck">
+            <summary>
+            OA-计划任务
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MissionProgress">
+            <summary>
+            OA-计划任务进度
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.IntraMail">
+            <summary>
+            OA-邮件附件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Bulletin">
+            <summary>
+            企业公告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ManageRefer">
+            <summary>
+            管理参考
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CorpThing">
+            <summary>
+            公司大事记
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.News">
+            <summary>
+            企业新闻
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BBS">
+            <summary>
+            企业论坛
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MyDoc">
+            <summary>
+            我的文档
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Welcome">
+            <summary>
+            欢迎页
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.QualityCheck">
+            <summary>
+             质量检查
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PerformanceAssessBook">
+            <summary>
+             绩效-考核目标书
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PerformanceApproval">
+            <summary>
+            OA-绩效报批
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PerformanceComplain">
+            <summary>
+            OA-绩效申诉
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Vehicle">
+            <summary>
+            车辆管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBiddingPlan">
+            <summary>
+            PBM-招议标计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.NewZBiddingPlan">
+            <summary>
+            PBM-招议标计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.EBudget">
+            <summary>
+            PBM-标底预算
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBFCheck">
+            <summary>
+            PBM-前期文档
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBiddingFile">
+            <summary>
+            PBM-招标文件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBiddingRequest">
+            <summary>
+            PBM-发标申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBAndy">
+            <summary>
+            PBM-定标申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DeptZBiddingPlan">
+            <summary>
+            PBM-部门项目计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectZBiddingPlan">
+            <summary>
+            PBM-项目计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BiddingSupplierCheck">
+            <summary>
+            PBM-合作单位审核
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBPRemark">
+            <summary>
+            PBM-招标计划附件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectMaterialRequest">
+            <summary>
+            PBM-项目材料部品标准
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BiddingPlotTemplate">
+            <summary>
+            PBM-采购策划模版
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBiddingStatic">
+            <summary>
+            PBM-战略年度采购策划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectZBiddingPlot">
+            <summary>
+            PBM-项目招标采购总体策划
+            </summary>
+        </member>
+        <!-- 对于成员“F:IDControls.UploadFileType.MaterialDemandPlanningRequest”忽略有格式错误的 XML 注释 -->
+        <member name="F:IDControls.UploadFileType.ZBiddingProjectPlanRequest">
+            <summary>
+            PBM-项目采购总体计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MaterialSupplyPlanningRequest">
+            <summary>
+            供货计划申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.StorageCheck">
+            <summary>
+            入库验收
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MaterialUsingRequest">
+            <summary>
+            使用申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MaterialApproachPlanningRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ZBiddingDesign">
+            <summary>
+            设计选型
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.InformationSubmit">
+            <summary>
+            信息报送
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.FinalPriceRequest">
+            <summary>
+            PBM-最终报价
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.NegotiationStrategyRequest">
+            <summary>
+            PBM-议标策略
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Subject">
+            <summary>
+            CCM-控制成本
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PeriodCostShape">
+            <summary>
+            CCM-阶段成本定稿
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CauseCostShape">
+            <summary>
+            CCM-目标成本定稿
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CauseCostChange">
+            <summary>
+            CCM-目标成本变更
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Contract">
+            <summary>
+            CCM-合同管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.NoContractFile">
+            <summary>
+            CCM-非合同管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ContractSanction">
+            <summary>
+            CCM-合同奖罚
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ContractLibrary">
+            <summary>
+            CCM-合同策划库
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DesignChange">
+            <summary>
+            CCM-其他变更
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DesignAlter">
+            <summary>
+            CCM-设计变更
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.LocalityChange">
+            <summary>
+            CCM-现场签证
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.WorkTaskProgress">
+            <summary>
+            CCM-工程进度/任务进度
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Estimate">
+            <summary>
+            CCM-进度款审核
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MonthFinalPayPlan">
+            <summary>
+            CCM-月度应付款计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PayRequest">
+            <summary>
+            CCM-付款申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Pay">
+            <summary>
+            CCM-付款管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Settlement">
+            <summary>
+            CCM-合同结算
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.NCSettlement">
+            <summary>
+            CCM-非合同结算
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectTaskFinish">
+            <summary>
+            CCM-成本优化管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BatchSettle">
+            <summary>
+            CCM-批量结算
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ManageCharge">
+            <summary>
+            CCM-合同责任管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.RiskManage">
+            <summary>
+            CCM-合同风险管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Evaluate">
+            <summary>
+            CCM-合同评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectContractLibrary">
+            <summary>
+            CCM-项目合同策划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PeriodProjectBaseDBRequest">
+            <summary>
+            CCM-项目基础数据库
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PeriodProjectMaterialAndStandards">
+            <summary>
+            CCMP-项目阶段产品标准/部品标准
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.IncomeRequest">
+            <summary>
+            CCMP-资金收入申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectDutyCostRequest">
+            <summary>
+            CCMP-项目责任成本申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BaseDBIndex">
+            <summary>
+            CCMP-基础数据库
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BasicSubject">
+            <summary>
+            CCMP-控制科目
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ContractPlanRequest">
+            <summary>
+            CCMP-合约规划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectContractPlanRequest">
+            <summary>
+            CCMP-项目合约规划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ContractUnit">
+            <summary>
+            CCMP-合同基准单元
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.FabricaSystemCheck">
+            <summary>
+            CCMP-造价信息审核
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DynamicCostReviewRequest">
+            <summary>
+            成本回顾
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.RemainCostAdjust">
+            <summary>
+            余量处理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CostLibraryReqeust">
+            <summary>
+            成本数据库申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ContractTemplate">
+            <summary>
+            CCM-合同范本
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CauseCostLoan">
+            <summary>
+            目标成本借调
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TBTemplate">
+            <summary>
+            POM-项目运营目标书模板
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.WorkTask">
+            <summary>
+            POM-任务发布
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TaskQuality">
+            <summary>
+            POM-任务质量记录
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TaskSecurity">
+            <summary>
+            POM-任务安全记录
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.EvalReport">
+            <summary>
+            POM-项目评估报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ExecReport">
+            <summary>
+            POM-项目执行报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.QualityFile">
+            <summary>
+            POM-质量文件定义
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.SecurityFile">
+            <summary>
+            POM-安全文件定义
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectComplete">
+            项目竣工验收项 
+        </member>
+        <member name="F:IDControls.UploadFileType.IPSubarea">
+            <summary>
+            POM-项目平面图设置
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ImageProgress">
+            <summary>
+            POM-形象进度
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectReport">
+            <summary>
+             POM-项目报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TargetBook">
+            <summary>
+            POM-目标运营书
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectPostAssessment">
+            <summary>
+            POM-项目后评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TargetBookProgress">
+            POM-项目运营书执行
+            
+        </member>
+        <member name="F:IDControls.UploadFileType.TargetBookCheck">
+            <summary>
+            POM-运营目标书检查
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TargetBookAssess">
+            <summary>
+            POM-运营目标书评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.WBSTemplate">
+            <summary>
+            任务模板
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TaskExecutionReport">
+            <summary>
+            POM-任务执行报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.WorkGuideTemplate">
+            <summary>
+            POM-工作指引
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TaskReportSumUp">
+            <summary>
+            POM-报告与总结
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.TFlowTemplate">
+            <summary>
+            POM-流程体系模板
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MeetingDecisionTemplate">
+            <summary>
+            POM-会议决策
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.PowerResponsibilityTemplate">
+            <summary>
+            POM-权责体系
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.WorkReport">
+            <summary>
+            POM-工作报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.OperationReport">
+            <summary>
+            POM-运营报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BMPTemplate">
+            <summary>
+            POM-经营与管理计划模板
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.GBMPlan">
+            <summary>
+            POM-集团经营与管理计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.GBMPlanExecute">
+            <summary>
+            POM-集团经营与管理执行
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.GBMPlanCheck">
+            <summary>
+            POM-集团经营与管理检查
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CBMPlan">
+            <summary>
+            POM-公司经营与管理计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CBMPlanExecute">
+            <summary>
+            POM-公司经营与管理执行
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CBMPlanCheck">
+            <summary>
+            POM-公司经营与管理检查
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.GBMPlanAssess">
+            <summary>
+            POM-集团经营与管理评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CBMPlanAssess">
+            <summary>
+            POM-公司经营与管理评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectAssess">
+            <summary>
+            POM-项目后评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectHarvest">
+            <summary>
+            POM-项目阶段性成果
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MeetingDecision">
+            <summary>
+            POM-会议决策
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectProgress">
+            <summary>
+            POM-工程进度文件登记
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectFundPlan">
+            <summary>
+            资金计划（中铁二次开发)
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectCheckTarget">
+            <summary>
+            项目考核指标（中铁二次开发)
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CorpKeyPlan">
+            <summary>
+            公司重点工作
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.MeetingSummaryRequest">
+            <summary>
+            宏发需求：会议纪要审批
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DeptWeekReport">
+            <summary>
+            POM-部门工作计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BudgetReportRequest">
+            <summary>
+            预算及资金计划评估和考核
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CurrentAccountRequest">
+            <summary>
+            公司来往帐申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BudgetRequest">
+            <summary>
+            预算编制/填报
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BudgetProjectRequest">
+            <summary>
+            项目预算
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.FundingPlansRequest">
+            <summary>
+            月度资金计划申请
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.FinacialSettlement">
+            <summary>
+            财务决算
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Evaluation">
+            <summary>
+            SUP-认证评估
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.COSLevelAdjust">
+            <summary>
+            供应商级别调整
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.HarvestTemplate">
+            <summary>
+            SUP-阶段任务成果模板
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Archives">
+            <summary>
+            SUP-档案附件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.NetCos">
+            <summary>
+            SUP-外部注册供应商
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CorpImage">
+            <summary>
+            SUP-公司文件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CustomerOrSupplier">
+            <summary>
+            SUP-供应商一览
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Goods">
+            <summary>
+            材料设备
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.DesignTask">
+            <summary>
+            设计任务
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.FlowSystemFile">
+            <summary>
+            流程体系文件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Account">
+            账号设置
+        </member>
+        <member name="F:IDControls.UploadFileType.HR_PerformanceAssessBook">
+            <summary>
+            HR-绩效-考核目标书
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.HR_PerformanceApproval">
+            <summary>
+            HR-绩效-绩效报批
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.HR_PerformanceComplain">
+            <summary>
+            HR-绩效-绩效申诉
+            </summary>        
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectFileManage">
+            <summary>
+            项目文件评价管理
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.OtherFile">
+            <summary>
+            其他文件
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CapitalPayPlan">
+            <summary>
+            年度资本性支计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BiddingPlanFormation">
+            <summary>
+            季度招标计划编制
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CapitalPayExecute">
+            <summary>
+            年度资本性支执行
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CapitalPayExecuteList">
+            <summary>
+            年度资本性支执行明细
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.BiddingPlanExecute">
+            <summary>
+            季度招标计划执行
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectInvestPlan">
+            <summary>
+            项目投资计划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectContractPlan">
+            <summary>
+            项目合同策划
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProjectInvestPlanExecute">
+            <summary>
+            项目投资计划执行
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CapitalPlanSummary">
+            <summary>
+            资本性支出预算汇总
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.CapitalExecSummary">
+            <summary>
+            资本性支出执行汇总
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProductLine">
+            <summary>
+            产品线
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.ProductInfo">
+            <summary>
+            产品单体
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Tchnical">
+            <summary>
+            产品技术准则
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Product_TaskExecutionReport">
+            <summary>
+            Product-任务执行报告
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Product_WorkTask">
+            <summary>
+            项目主项计划发布
+            </summary>
+        </member>
+        <member name="F:IDControls.UploadFileType.Product_ProgressRiskAssess">
+            <summary>进度风险评估
+            </summary>
+        </member>
+        <member name="M:IDControls.ControlFuns.CouldBrowseOnlineFile(System.String)">
+            <summary>
+            判断文件是否可以在线预览（文本文件、图片文件、pdf）
+            作者：翁化青
+            时间：2014-05-23
+            </summary>
+            <param name="strExtension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.IsImage(System.String)">
+            <summary>
+            通过后缀名判断是否是图片
+            翁化青 2014-08-29
+            </summary>
+            <param name="strExtension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.IsOfficeFile(System.String)">
+            <summary>
+            判断文件是否为Office文件(支持Word、Excel、PowerPoint、Access、Visio、Project的常用格式)
+            作者：程爱民
+            时间：2010-10-22
+            </summary>
+            <param name="strExtension">扩展名</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetLoginUserID">
+            <summary>
+            获取当前用户ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetLoginUserName">
+            <summary>
+            获取当前用户姓名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.SetUploadedFileInfo(IDControls.IDUpLoadedFile)">
+            <summary>
+            设置上传文件的信息(上传人、上传日期)
+            </summary>
+            <param name="files">文件实体</param>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetWaterMarkContentType">
+            <summary>
+            获取水印添加文本的方式
+            （0：自定义，P：取项目名称，C：取公司名称）
+            作者:Loper
+            时间：2018-01-04
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetMaxRequestLength">
+            <summary>
+            获取系统允许上传的文件大小(MB)
+            作者：程爱民
+            日期：2012-06-11
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetTextBoxHtml(System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            获取TextBoxHtml
+            </summary>
+            <param name="onfocus"></param>
+            <param name="onblur"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetTextBoxHtml(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            重载获取TextBoxHtml（暂用于预算表单绑定）
+            </summary>
+            <param name="onfocus"></param>
+            <param name="onblur"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetTextBoxHtml(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            重载获取TextBoxHtml（暂用于预算表单绑定）
+            </summary>
+            <param name="onfocus"></param>
+            <param name="onblur"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetTextAreaHtml(System.String,System.String)">
+            <summary>
+            获取TextAreaHtml
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetDateHtml(System.String,System.String,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            获取日期
+            </summary>
+            <param name="strDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.ControlFuns.GetThemeVersion(System.Web.UI.Page)">
+            <summary>
+            获取主题版本
+            作者：程爱民
+            日期：2014-10-13
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="F:IDControls.CustomGrid.GridStyle">
+            <summary>
+            Grid整体样式
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.HeadStyle">
+            <summary>
+            表头样式
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.trStyle">
+            <summary>
+            行样式
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.ShowAddButton">
+            <summary>
+            是否显示增加行按钮
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.isAddTreeNodeEvent">
+            <summary>
+            是否添加树节点事件
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.Model">
+            <summary>
+            Grid模式[查看，编辑]
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.PrimaryKeyField">
+            <summary>
+            主键字段
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.RowIDs">
+            <summary>
+            每一行的主键ID
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.IsShowCheckBox">
+            <summary>
+            是否显示选中框
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.customBtnList">
+            <summary>
+            自定义按钮
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomGrid.GridHeight">
+            <summary>
+            Grid的高度
+            </summary>
+        </member>
+        <member name="M:IDControls.CustomGrid.CreateGridHtml">
+            <summary>
+            生成Html
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomGrid.createHeadHtml">
+            <summary>
+            获取表头的html
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomGrid.createRowHtml(System.Boolean)">
+            <summary>
+            获取行的html
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomGrid.CreateTDHtml(System.Boolean,System.String,System.Data.DataRow,IDControls.CustomHead,System.Int32)">
+            <summary>
+            生成TD的html
+            </summary>
+            <param name="disable"></param>
+            <param name="html"></param>
+            <param name="row"></param>
+            <param name="head"></param>
+            <param name="RowSpan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomGrid.GetControlHtml(System.Web.UI.Control)">
+            <summary>
+            获取控件内容
+            (由于目前只有当前控件用到，所以就不再引用IDCommon.dll)
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomGrid.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.CustomGrid.BindDataTableToDDL(System.Web.UI.WebControls.DropDownList,System.Data.DataTable,System.String,System.String,IDCommon.DDLHeaderType)">
+            <summary>
+            加载数据源到下拉框DropDownList(数据源含Outline可呈现层级关系)
+            作者：刘本和
+            日期：2013-6-03
+            </summary>
+            <param name="ddl">下拉框</param>
+            <param name="dtData">数据源(树数据需包含列Outline)</param>
+            <param name="strIDName">ID列名</param>
+            <param name="strTitleName">名称列名</param>
+            <param name="headerType">第一项类型</param>
+        </member>
+        <member name="M:IDControls.CustomGrid.GetLevelPrefix(System.Int32)">
+            作者：刘本和
+            日期：2013-6-03
+            <summary>
+            获取下拉框中有级别内容(如架构、合同类别等)的名称前的前缀
+            </summary>
+            <param name="iStep">与第一项的级别差</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomGrid.SetDDLFirstItem(System.Web.UI.WebControls.DropDownList,IDCommon.DDLHeaderType)">
+            <summary>
+            设置DropDownList的第一项
+            作者：刘本和
+            日期：2013-6-03
+            </summary>
+            <param name="ddl">DropDownList</param>
+            <param name="ddlHeaderType">第一项类型</param>
+        </member>
+        <member name="P:IDControls.CustomGrid.ShowDelButton">
+            <summary>
+            是否显示删除行按钮
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomGrid.ShowBatchEditButton">
+            <summary>
+            是否显示批量修改按钮
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomGrid.IsAddTreeNodeEvent">
+            <summary>
+            是否添加树节点事件
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomGrid.Sourse">
+            <summary>
+            数据源
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomGrid.RootHead">
+            <summary>
+            表头的根路径
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.HeadText">
+            <summary>
+            表头名称
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.IsJoinInsertTableField">
+            <summary>
+            是否加入插入表字段,默认true
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.IsSpecialHandleForJs">
+            <summary>
+            是否JS执行特殊处理
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.SpecialHandleEvent">
+             <summary>
+            执行特殊处理事件
+             </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.SpecialHandleMeans">
+            <summary>
+            执行特殊处理方法
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.IsShow">
+            <summary>
+            是否显示,默认true
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.DataField">
+            <summary>
+            数据源字段（只用于最底级头）.该字段将作为标识使用，请保证不被其他列重复使用
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.CustormHeadType">
+            <summary>
+            数据列类型（只用于最底级头）
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.DataSourse">
+            <summary>
+            数据源，用于DropDownList和CheckBox（只用于最底级头）
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.DataTextField">
+            <summary>
+            数据源名称字段（只用于最底级头）
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.AllowAutoMerge">
+            <summary>
+            是否允许相同行合并（只用于最底级头）
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.DataAlign">
+            <summary>
+            数据排列方式（居左，居中，居右.默认居左）（只用于最底级头）
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.EnableField">
+            <summary>
+            判断该单元格是否可用的数据源字段(值为N时不可用)
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.CustomHtml">
+            <summary>
+            自定义html
+            </summary>
+        </member>
+        <member name="F:IDControls.CustomHead.TreeHeaderType">
+            <summary>
+            默认第一项的类型
+            </summary>
+        </member>
+        <member name="M:IDControls.CustomHead.childCount">
+            <summary>
+            最底级子的个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomHead.AddChild(IDControls.CustomHead)">
+            <summary>
+            增加子表头
+            </summary>
+            <param name="childHead"></param>
+        </member>
+        <member name="M:IDControls.CustomHead.MaxLevel">
+            <summary>
+            获取子的最大层级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomHead.GetChildsByLevel(System.Int32)">
+            <summary>
+            获取指定层级的子
+            </summary>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.CustomHead.GetAllLowestHead">
+            <summary>
+            获取最底层的子
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IDControls.CustomHead.ChildHead">
+            <summary>
+            子表头
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomHead.ParentHead">
+            <summary>
+            父表头
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomHead.Level">
+            <summary>
+            层级
+            </summary>
+        </member>
+        <member name="P:IDControls.CustomHead.IsLowestHead">
+            <summary>
+            是否最低级表头
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.Lable">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.IntText">
+            <summary>
+            整数
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.FloatText">
+            <summary>
+            小数
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.FreeText">
+            <summary>
+            富文本
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.DateTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.DropDownList">
+            <summary>
+            单选
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.CheckBox">
+            <summary>
+            多选
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.Custom">
+            <summary>
+            自定义
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.Bool">
+            <summary>
+            布尔型
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.CustomAndHidden">
+            <summary>
+            自定义加隐藏域
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.SelectButton">
+            <summary>
+            按钮选择（如选择岗位,职务）
+            </summary>
+        </member>
+        <member name="F:IDControls.HeadType.DropDownTreeList">
+            <summary>
+            树单选
+            </summary>
+        </member>
+        <member name="M:IDControls.IDArea.CreateChildControls">
+            <summary>
+            重写CreateChildControls
+            </summary>
+        </member>
+        <member name="M:IDControls.IDArea.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDArea.Text">
+            <summary>
+            标签文本
+            </summary>
+        </member>
+        <member name="P:IDControls.IDArea.Desc">
+            <summary>
+            描述说明
+            </summary>
+        </member>
+        <member name="P:IDControls.IDArea.State">
+            <summary>
+            折叠或展开状态
+            </summary>
+        </member>
+        <member name="P:IDControls.IDArea.ShowDesc">
+            <summary>
+            是否显示描述说明
+            </summary>
+        </member>
+        <member name="P:IDControls.IDArea.OnClick">
+            <summary>
+            点击控件的JS方法
+            </summary>
+        </member>
+        <member name="F:IDControls.IDBtn.img">
+            <summary>
+            按钮图片
+            </summary>
+        </member>
+        <member name="M:IDControls.IDBtn.CreateChildControls">
+            <summary>
+            重写CreateChildControls
+            </summary>
+        </member>
+        <member name="M:IDControls.IDBtn.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDBtn.GetImgExtension(System.String)">
+            <summary>
+            根据主题样式获取按钮图片的扩展名
+            作者：张敏强
+            日期：2016-03-21
+            </summary>
+            <param name="theme"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDBtn.GetImgSrc(System.String,IDControls.ButtonType,System.String)">
+            <summary>
+            根据主题样式、按钮类型获取按钮图片的地址
+            作者：张敏强
+            日期：2016-03-21
+            </summary>
+            <param name="theme"></param>
+            <param name="buttontype"></param>
+            <param name="commonBtnPath"></param>
+            <returns></returns>
+        </member>
+        <member name="P:IDControls.IDBtn.Width">
+            <summary>
+            按钮的宽度(单位为px)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.Text">
+            <summary>
+            按钮文本
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.ToolTip">
+            <summary>
+            按钮悬停提示文本
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.IsListBtn">
+            <summary>
+            是否为列表页功能按钮，否则为表单页操作按钮
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.IsNarrow">
+            <summary>
+            是否为窄边按钮(多为选择按钮、表单内按钮)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.ImgLatter">
+            <summary>
+            是否图片在文本之后
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.ShowSpacing">
+            <summary>
+            当IsListBtn为false时，按钮右边是否有间隙(后面的控件不能紧靠按钮，有一段间隙)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.BtnType">
+            <summary>
+            按钮类型
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.Menu">
+            <summary>
+            当BtnType为DownList(下拉菜单)时，可指定下拉菜单内容，为用,或;分隔的BtnType|Text字符串
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.MenuWidth">
+            <summary>
+            下拉菜单宽度(默认100px)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDBtn.ClientID">
+            <summary>
+            按钮在客户端呈现的id
+            </summary>
+        </member>
+        <member name="F:IDControls.IDDate.Width">
+            <summary>
+            控件宽度
+            </summary>
+        </member>
+        <member name="M:IDControls.IDDate.Clear">
+            <summary>
+            清空日期控件
+            </summary>
+        </member>
+        <member name="M:IDControls.IDDate.OnPreRender(System.EventArgs)">
+            <summary>
+            重写OnPreRender
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:IDControls.IDDate.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDDate.SelectTime">
+            <summary>
+            是否选择时间(小时分秒)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.CustomAttrs">
+            <summary>
+            自定义的属性集合
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.NextDateID">
+            <summary>
+            下一个日期控件的ID(如果指定该参数，并且未指定OnDatePicked，则选择完本日期后会自动激活下一个日期控件)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.OnDatePicking">
+            <summary>
+            日期选择事件(js函数名、函数句柄)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.OnDatePicked">
+            <summary>
+            日期选择完毕事件(js函数名、函数句柄)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.OnDateCleared">
+            <summary>
+            日期选择事件(js函数名、函数句柄)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.Hour">
+            <summary>
+            小时(默认0)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.Minute">
+            <summary>
+            分钟(默认0)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.MinDate">
+            <summary>
+            最小可选日期
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.MaxDate">
+            <summary>
+            最大可选日期
+            </summary>
+        </member>
+        <member name="P:IDControls.IDDate.Value">
+            <summary>
+            选中的日期值
+            </summary>
+        </member>
+        <member name="T:IDControls.IDRichTextBox">
+            <summary>
+            富文本框控件， 使用百度的UEditor封装而成
+            翁化青
+            2014-08-27
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRichTextBox.StandardToolbars">
+            <summary>
+            标准模式工具栏
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRichTextBox.FullToolbars">
+            <summary>
+            完整模式工具栏
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRichTextBox.Fontsize">
+            <summary>
+            字号
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRichTextBox.ShortcutMenu">
+            <summary>
+            快捷菜单
+            </summary>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.AddAttributesToRender(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            添加UEditor需要的标签属性
+            翁化青 2014-08-27
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            将输出内容添加进UEditor中。
+            翁化青 2014-08-27
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.GetControlHtml(System.Web.UI.Control)">
+            <summary>
+            获取控件内容
+            (由于目前只有当前控件用到，所以就不再引用IDCommon.dll)
+            翁化青 2014-08-27
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.OnPreRender(System.EventArgs)">
+            <summary>
+            重写OnPreRender
+            翁化青 2014-08-27
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render，添加保存ViewState所需的input控件
+            翁化青 2014-08-27
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.OnLoad(System.EventArgs)">
+            <summary>
+            重写OnLoad事件
+            翁化青 2014-08-27
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.CreateStartupScript">
+            <summary>
+            生成要注册到页面中的js脚本
+            翁化青 2014-08-27
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.CreateInitialParams">
+            <summary>
+            生成初始化参数对象
+            翁化青 2014-08-28
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.CreateInitialToolBarsDesc">
+            <summary>
+            生成初始化时工具栏的描述
+            翁化青 2014-08-28
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDRichTextBox.GetToolBarsArray">
+            <summary>
+            根据当前富文本框模式获取工具栏描述字符串数组
+            翁化青 2014-09-01
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Mode">
+            <summary>
+            编辑器模式，加载时会根据不同的模式加载不同的工具栏
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ZIndex">
+            <summary>
+            编辑器在页面上的z-index层级的基数，默认是900
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.IsShow">
+            <summary>
+            默认显示编辑器,默认true
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Focus">
+            <summary>
+            初始化时，是否让编辑器获得焦点,默认为false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.InitialStyle">
+            <summary>
+            编辑器层级的基数，可以用来改变字体等 
+            如果自定义，最好给p标签如下的行高，要不输入中文时，会有跳动感
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.IndentValue">
+            <summary>
+            首行缩进距离，默认是2em
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Readonly">
+            <summary>
+            编辑器初始化结束后，编辑区域是否是只读的，默认是false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.AutoClearEmptyNode">
+            <summary>
+            getContent时，是否删除空的inlineElement节点（包括嵌套的情况）
+            </summary>        
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ImageScaleEnabled">
+            <summary>
+            启用图片拉伸缩放，默认true
+            </summary>        
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ImagePopup">
+            <summary>
+            图片操作的浮层开关，默认打开
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.RetainOnlyLabelPasted">
+            <summary>
+            粘贴只保留标签，去除标签所有属性，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Pasteplain">
+            <summary>
+            是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.AllHtmlEnabled">
+            <summary>
+            提交到后台的数据是否包含整个html字符串，默认true
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ListDefaultPaddingLeft">
+            <summary>
+            默认的左边缩进的基数倍，默认"30"
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.MaxListLevel">
+            <summary>
+            限制可以tab的级数， 原默认值为-1,为不限制。
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.AutoTransWordToList">
+            <summary>
+            禁止word中粘贴进来的列表自动变成列表标签，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.EnableContextMenu">
+            <summary>
+            打开右键菜单功能，默认true
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ElementPathEnabled">
+            <summary>
+            是否启用元素路径，默认是不显示
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.WordCount">
+            <summary>
+            是否开启字数统计，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.MaximumWords">
+            <summary>
+            允许的最大字符数，默认10000
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.WordOverFlowMsg">
+            <summary>
+            当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符，字数统计提示，{#count}代表当前字数，{#leave}代表还可以输入多少字符数，留空支持多语言自动切换，否则按此配置显示
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.TabSize">
+            <summary>
+            点击tab键时移动的距离，tabSize倍数，tabNode什么字符做为单位,默认4
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.TabNode">
+            <summary>
+            缩进（按tab键）时插入的字符
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.RemoveFormatTags">
+            <summary>
+            清除格式时可以删除的标签和属性
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.AutoHeightEnabled">
+            <summary>
+            是否自动长高，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ScaleEnabled">
+            <summary>
+            是否可以拉伸长高,当开启时，自动长高失效，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.MinWidth">
+            <summary>
+            编辑器拖动时最小宽度，默认800
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.MinHeight">
+            <summary>
+            编辑器拖动时最小高度，默认220
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.AutoFloatEnabled">
+            <summary>
+            是否保持toolbar的位置不动，默认true
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.TopOffset">
+            <summary>
+            浮动时工具栏距离浏览器顶部的高度，用于某些具有固定头部的页面，默认30
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ToolbarTopOffset">
+            <summary>
+            编辑器底部距离工具栏高度(如果参数大于等于编辑器高度，则设置无效)，默认400
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.TableDragable">
+            <summary>
+            /表格是否可以拖拽，默认true
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.DisabledTableInTable">
+            <summary>
+            禁止表格嵌套，默认true
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.ClientID">
+            <summary>
+            客户端ID
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Text">
+            <summary>
+            富文本框的值， 包含样式、结构、文本信息的完整html内容。
+            翁化青 2014-08-27
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.InnerText">
+            <summary>
+            富文本框中的纯文本信息
+            翁化青 2014-08-27
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Width">
+            <summary>
+            初始化编辑器宽度，不设置时为100%宽度
+            </summary>       
+        </member>
+        <member name="P:IDControls.IDRichTextBox.Height">
+            <summary>
+            初始化编辑器高度，默认350
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRichTextBox.TagKey">
+            <summary>
+            修改对象导出的默认标签名为script， 根据UEditor使用方式修改
+            翁化青 2014-08-27
+            </summary>
+        </member>
+        <member name="T:IDControls.IDRichTextBox.RichTextBoxMode">
+            <summary>
+            富文本模式，根据不同模式加载工具栏
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRichTextBox.RichTextBoxMode.Standard">
+            <summary>
+            标准模式
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRichTextBox.RichTextBoxMode.Full">
+            <summary>
+            完整功能模式
+            </summary>
+        </member>
+        <member name="M:IDControls.IDHref.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDHref.Text">
+            <summary>
+            超链文本
+            </summary>
+        </member>
+        <member name="P:IDControls.IDHref.Target">
+            <summary>
+            超链目标
+            </summary>
+        </member>
+        <member name="P:IDControls.IDHref.Href">
+            <summary>
+            超链的Url
+            </summary>
+        </member>
+        <member name="P:IDControls.IDHref.OnClick">
+            <summary>
+            点击超链执行客户端的JS方法
+            </summary>
+        </member>
+        <member name="P:IDControls.IDHref.CssClass">
+            <summary>
+            超链的外观样式
+            </summary>
+        </member>
+        <member name="F:IDControls.IDHtml.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="M:IDControls.IDHtml.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDHtml.Text">
+            <summary>
+            Html文本
+            </summary>
+        </member>
+        <member name="M:IDControls.IDLabel.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDLabel.Text">
+            <summary>
+            标签文本
+            </summary>
+        </member>
+        <member name="P:IDControls.IDLabel.Color">
+            <summary>
+            标签文本的颜色
+            </summary>
+        </member>
+        <member name="P:IDControls.IDLabel.IsDesc">
+            <summary>
+            是否用于描述信息（通常用于描述区）
+            </summary>
+        </member>
+        <member name="P:IDControls.IDLabel.IsRequired">
+            <summary>
+            是否必填(必填则带红色星号)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDLabel.IsHideRequiredTip">
+            <summary>
+            是否隐藏必填项的提示信息（即隐藏红色星号)
+            </summary>
+        </member>
+        <member name="F:IDControls.IDMonth.Width">
+            <summary>
+            控件宽度，默认100%
+            </summary>
+        </member>
+        <member name="M:IDControls.IDMonth.CreateChildControls">
+            <summary>
+            重写CreateChildControls
+            </summary>
+        </member>
+        <member name="M:IDControls.IDMonth.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDMonth.MultiSelect">
+            <summary>
+            是否多选
+            </summary>
+        </member>
+        <member name="P:IDControls.IDMonth.AutoPostBack">
+            <summary>
+            是否自动回发，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDMonth.Value">
+            <summary>
+            选择的月份值(多个用逗号分隔)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDMonth.OnClientChange">
+            <summary>
+            选择项变化的客户端事件
+            </summary>
+        </member>
+        <member name="E:IDControls.IDMonth.ServerChanged">
+            <summary>
+            选择项变化的服务端事件
+            </summary>
+        </member>
+        <member name="M:IDControls.IDPager.OnPreRender(System.EventArgs)">
+            <summary>
+            重写OnPreRender
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:IDControls.IDPager.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDPager.GetClientScript">
+            <summary>
+            获取客户端脚本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IDControls.IDPager.AutoLoad">
+            <summary>
+            是否自动加载数据
+            </summary>
+        </member>
+        <member name="P:IDControls.IDPager.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:IDControls.IDPager.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="P:IDControls.IDPager.OrderBy">
+            <summary>
+            排序字段(应含Asc或Desc，但不含ORDER BY)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDPager.AutoHeight">
+            <summary>
+            是否根据内容自动调整高度(默认为false，100%)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDPager.ShowBorder">
+            <summary>
+            是否显示外边框(如在选项卡内，一般不需要外边框)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDPager.CallBack">
+            <summary>
+            数据加载完的客户端事件
+            </summary>
+        </member>
+        <member name="T:IDControls.IDRangeDate">
+            <summary>
+            选择日期范围控件。由两个日期控件构成。
+            </summary>
+        </member>
+        <member name="F:IDControls.IDRangeDate.Width">
+            <summary>
+            控件宽度
+            </summary>
+        </member>
+        <member name="M:IDControls.IDRangeDate.OnPreRender(System.EventArgs)">
+            <summary>
+            重写OnPreRender
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:IDControls.IDRangeDate.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写RenderContents
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDRangeDate.EnablePostBack">
+            <summary>
+            是否启用回发
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.StartDateID">
+            <summary>
+            开始的日期控件的ID
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.EndDateID">
+            <summary>
+            结束的日期控件的ID
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.StartDate">
+            <summary>
+            开始日期控件
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.EndDate">
+            <summary>
+            结束日期控件
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.EnableAutoNextDate">
+            <summary>
+            是否启用自动下一个日期。启用后，结束日期将自动作为开始日期的下一个日期
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.StartDateSetting">
+            <summary>
+            开始日期设置(该属性仅用于控件初始化设置，而不能用于在回发后获取值。如若要回发后获取值，请使用StartDate属性来获取(StartDate为IDDate的实例))
+            </summary>
+        </member>
+        <member name="P:IDControls.IDRangeDate.EndDateSetting">
+            <summary>
+            结束日期设置(该属性仅用于控件初始化设置，而不能用于在回发后获取值。如若要回发后获取值，请使用EndDate属性来获取(EndDate为IDDate的实例))
+            </summary>
+        </member>
+        <member name="F:IDControls.IDSelectDDL.Width">
+            <summary>
+            控件宽度，默认100%
+            </summary>
+        </member>
+        <member name="F:IDControls.IDSelectDDL.Height">
+            <summary>
+            控件高度，默认300px
+            </summary>
+        </member>
+        <member name="M:IDControls.IDSelectDDL.CreateChildControls">
+            <summary>
+            重写CreateChildControls
+            </summary>
+        </member>
+        <member name="M:IDControls.IDSelectDDL.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDSelectDDL.GetDropDownListString">
+            <summary>
+            获取数据记录的客户端HTML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.SizeFixed">
+            <summary>
+            是否固定宽度
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.BtnWidth">
+            <summary>
+            过滤按钮的宽度，默认60px
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.Type">
+            <summary>
+            选择框类型
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.DataRangeType">
+            <summary>
+            选择框数据来源模型。
+            不同的指定值会影响控件形为（比如项目过滤绑定的数据可能不同）。
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.EnableSelectCorp">
+            <summary>
+            当为项目选择框时，是否允许选择公司
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.CorpInfoEnabled">
+            <summary>
+            当为项目选择框时，是否可获取公司信息(公司ID、公司名称)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.ShowBtn">
+            <summary>
+            是否显示过滤按钮，默认true(项目过滤)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.AutoPostBack">
+            <summary>
+            是否自动回发，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.Text">
+            <summary>
+            选择项的Text
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.SelectedValue">
+            <summary>
+            选择项的Value
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.SelectedIndex">
+            <summary>
+            选择项的索引
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.CorpID">
+            <summary>
+            当为项目或部门选择框时，选中所在的公司ID
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.CorpName">
+            <summary>
+            当为项目或部门选择框时，选中项目所在的公司名称
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.IsTaskProfessional">
+            <summary>
+            是否要专员判断
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.Count">
+            <summary>
+            Item的数目
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.DataSource">
+            <summary>
+            数据源，必须包含RowIndex、Outline、ID列(如CorpID、ProjectID等)、Name列(如CorpName、ProjectName等)字段；
+            如果为项目选择框(Type为Project)，则数据源还须包含IsCorp(bit)字段，因为要加载公司，公司记录的IsCorp为1
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.mapID">
+            <summary>
+            ID列名(内部使用)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.mapName">
+            <summary>
+            Name列名(内部使用)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.btnText">
+            <summary>
+            过滤按钮的文本(内部使用)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.OnClientChange">
+            <summary>
+            选择项变化的客户端事件
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.AccountID">
+            <summary>
+            帐号ID
+            </summary>
+        </member>
+        <member name="P:IDControls.IDSelectDDL.CustomAttrs">
+            <summary>
+            自定义的属性集合(add by xiaodm 2012-9-17)
+            </summary>
+        </member>
+        <member name="E:IDControls.IDSelectDDL.SelectedChanged">
+            <summary>
+            选择项变化的服务端事件
+            </summary>
+        </member>
+        <member name="M:IDControls.IDCustomHidden.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDCustomHidden.CustomHtml">
+             <summary>
+            自定义内容
+             </summary>
+        </member>
+        <member name="P:IDControls.IDCustomHidden.Value">
+             <summary>
+            值
+             </summary>
+        </member>
+        <member name="M:IDControls.IDUpload.GetControlHtml(System.Web.UI.Control)">
+            <summary>
+            获取控件内容
+            (由于目前只有当前控件用到，所以就不再引用IDCommon.dll)
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDUpload.OnPreRender(System.EventArgs)">
+            <summary>
+            重写OnPreRender
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:IDControls.IDUpload.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.IDUpload.GetFileInfo(System.Collections.Generic.List{IDControls.IDUpLoadedFile})">
+            <summary>
+            根据文件实体的集合获取文件的信息
+            </summary>
+            <param name="files">文件实体的集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.IDUpload.GetStartupScript">
+            <summary>
+            获取客户端onload脚本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IDControls.IDUpload.UploadUrl">
+            <summary>
+            上传处理地址(相对路径即可如:/Common/Handler/Upload.aspx)
+            作者：陈毓孟
+            日期: 2015-08-10
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.Mode">
+            <summary>
+            上传控件操作模式
+            (Upload:上传/Browse:查看)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.IsEncrypt">
+            <summary>
+            是否加密上传
+            Loper，2017-12-29
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.IsDecrypt">
+            <summary>
+            下载需要解密
+            Loper，2017-12-29
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.IsAddWaterMark">
+            <summary>
+            是否添加水印
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ExternID">
+            <summary>
+            外部控件ID【项目控件或公司控件的ID】（用于获取主体ID，添加水印时必须设置）
+            Loper 2018年1月4日
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.OfficeMode">
+            <summary>
+            上传控件中Office文件操作模式
+            (None:无/Edit:编辑/Browse:查看)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowFileNameLink">
+            <summary>
+            是否将文件名显示为超链(点击链接到文件)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowDownload">
+            <summary>
+            是否显示下载按钮
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowSaveKnowledge">
+            <summary>
+            是否显示存知识库按钮
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowDelete">
+            <summary>
+            是否显示删除按钮
+            (当Mode属性为Upload时，该属性有效)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowDeleteWhenLoading">
+            <summary>
+            是否在后台加载的文件后显示删除按钮
+            (当Mode属性为Upload时，该属性有效)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowFileIndex">
+            <summary>
+            是否显示文件索引
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowFileIco">
+            <summary>
+            是否显示文件图标
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowFileSize">
+            <summary>
+            是否显示文件大小
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowAuthor">
+            <summary>
+            是否显示上传人(作者)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ShowUploadTime">
+            <summary>
+            是否显示上传时间
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.DeleteReally">
+            <summary>
+            删除文件时是否彻底删除
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.MaxCount">
+            <summary>
+            允许上传的最大文件数
+            (默认100)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.MaxLength">
+            <summary>
+            允许上传的文件大小
+            (默认100MB)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.FileType">
+            <summary>
+            上传文件类型
+            (允许上传文件的扩展名，如有多个扩展名，则用分号分隔，默认不限制，如只允许上传Word文档，可设为*.doc;*.docx)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.AutoGenerateThumbnail">
+            <summary>
+            是否自动生成缩略图
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ThumbnailWidth">
+            <summary>
+            缩略图宽度（像素）
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.ThumbnailHeight">
+            <summary>
+            缩略图高度（像素）
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.UploadPath">
+            <summary>
+            上传路径(从程序根目录之后的斜杠开始，并以斜杠结束，如："\Accessary\2010\05\CCMP\Pay\")
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.PathType">
+            <summary>
+            路径类型(未设置上传路径时，系统根据路径类型来设置上传路径)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.SubmitBtnID">
+            <summary>
+            用逗号连接的提交按钮的ID(上传过程中不许提交)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.OnFileUploaded">
+            <summary>
+            文件(单个)上传完成事件
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.OnFileQueueUploaded">
+            <summary>
+            文件(队列)上传完成事件
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.OnFileDeleted">
+            <summary>
+            文件删除事件
+            </summary>
+        </member>
+        <member name="E:IDControls.IDUpload.FileServerQueueUploaded">
+            <summary>
+            文件(队列)上传完成服务器事件
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.Files">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpload.DataSource">
+            <summary>
+            文件列表的数据源
+            </summary>
+        </member>
+        <member name="T:IDControls.IDUpLoadedFile">
+            <summary>
+            上传的文件实体类
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.FileName">
+            <summary>
+            文件名(从程序根目录之后的斜杠开始，并以斜杠结束，如："\Accessary\2010\05\CCMP\Pay\bf5deb02-7dc5-49d5-bb93-4bc27152b6bb.doc")
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.FileTitle">
+            <summary>
+            文件标题(如："第一次工程付款合同.doc")
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.FileLength">
+            <summary>
+            文件大小(单位：字节、byte)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.AuthorID">
+            <summary>
+            文件作者账号ID
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.AuthorName">
+            <summary>
+            文件作者姓名
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.UploadTime">
+            <summary>
+            文件上传日期(yy-MM-dd HH:mm)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.PhysicsFileName">
+            <summary>
+            文件物理路径
+            </summary>
+        </member>
+        <member name="P:IDControls.IDUpLoadedFile.ThumbnailName">
+            <summary>
+            缩略图文件名(从程序根目录之后的斜杠开始，并以斜杠结束，如："\Accessary\2010\05\CCMP\Pay\bf5deb02-7dc5-49d5-bb93-4bc27152b6bb.jpg")
+            </summary>
+        </member>
+        <member name="F:IDControls.IDYear.Width">
+            <summary>
+            控件宽度，默认100%
+            </summary>
+        </member>
+        <member name="M:IDControls.IDYear.CreateChildControls">
+            <summary>
+            重写CreateChildControls
+            </summary>
+        </member>
+        <member name="M:IDControls.IDYear.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDYear.MultiSelect">
+            <summary>
+            是否多选
+            </summary>
+        </member>
+        <member name="P:IDControls.IDYear.AutoPostBack">
+            <summary>
+            是否自动回发，默认false
+            </summary>
+        </member>
+        <member name="P:IDControls.IDYear.Value">
+            <summary>
+            选择的年份值(多个用逗号分隔)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDYear.OnClientChange">
+            <summary>
+            选择项变化的客户端事件
+            </summary>
+        </member>
+        <member name="E:IDControls.IDYear.ServerChanged">
+            <summary>
+            选择项变化的服务端事件
+            </summary>
+        </member>
+        <member name="T:IDControls.jqGridDataRow">
+            <summary>
+            适用于jqGrid的json树形结构，此类表示每一行的数据
+            此类用于jsonReader采用默认设置时的json结构，即由id和cell构成每一数据行结构
+            </summary>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.#ctor(System.String)">
+            <summary>
+            创建行数据结构
+            </summary>
+            <param name="iID">行标识</param>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.AddCells(System.String[])">
+            <summary>
+            添加列数据集合
+            </summary>
+            <param name="cells">添加列数据集合 string[]</param>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.AddCells(System.Object[])">
+            <summary>
+            添加列数据集合
+            </summary>
+            <param name="cells">添加列数据集合 object[]</param>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.AddCells(System.Data.DataRow)">
+            <summary>
+            添加列数据集合
+            </summary>
+            <param name="dr">DataRow数据行</param>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.AddCells(System.Data.DataRow,System.Int32[])">
+            <summary>
+            添加列数据集合
+            </summary>
+            <param name="dr">DataRow数据行</param>
+            <param name="colIndexs">需要添加进集合的DataRow的列索引数组</param>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.AddCells(System.Data.DataRow,System.String[])">
+            <summary>
+            添加列数据集合
+            </summary>
+            <param name="dr">DataRow数据行</param>
+            <param name="colNames">需要添加进集合的DataRow的列名数组</param>
+        </member>
+        <member name="M:IDControls.jqGridDataRow.Obj2Str(System.Object)">
+            <summary>
+            将object转换为string的方法
+            </summary>
+            <param name="obj">object数据</param>
+            <returns>string数据</returns>
+        </member>
+        <member name="P:IDControls.jqGridDataRow.id">
+            <summary>
+            每一行的标识
+            </summary>
+        </member>
+        <member name="P:IDControls.jqGridDataRow.cell">
+            <summary>
+            每一列的数据集合
+            </summary>
+        </member>
+        <member name="T:IDControls.jqGridDataTree`1">
+            <summary>
+            适用于jqGrid的json树形结构（根）
+            </summary>
+            <typeparam name="T">可选项，根据jsonReader的配置进行选择，目前只有jqGridDataRow
+            </typeparam>
+        </member>
+        <member name="M:IDControls.jqGridDataTree`1.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            创建树结构
+            </summary>
+            <param name="iTotal">总共多少页</param>
+            <param name="iPage">当前第几页</param>
+            <param name="iRecords">总共有多少记录</param>
+        </member>
+        <member name="M:IDControls.jqGridDataTree`1.AddRows(`0[])">
+            <summary>
+            添加行集合
+            </summary>
+            <param name="dataRows">行集合</param>
+        </member>
+        <member name="P:IDControls.jqGridDataTree`1.total">
+            <summary>
+            总共多少页
+            </summary>
+        </member>
+        <member name="P:IDControls.jqGridDataTree`1.page">
+            <summary>
+            当前第几页
+            </summary>
+        </member>
+        <member name="P:IDControls.jqGridDataTree`1.records">
+            <summary>
+            总共有多少记录
+            </summary>
+        </member>
+        <member name="P:IDControls.jqGridDataTree`1.rows">
+            <summary>
+            当前表格所包括的行集合
+            </summary>
+        </member>
+        <member name="P:IDControls.jqGridDataTree`1.userdata">
+            <summary>
+            用户数据集合
+            </summary>
+        </member>
+        <member name="T:IDControls.DataSourceType">
+            <summary>
+            数据来源类型（这些数据类型均针对js而言)
+            </summary>
+        </member>
+        <member name="T:IDControls.RequestMethod">
+            <summary>
+            页面请求类型
+            </summary>
+        </member>
+        <member name="T:IDControls.MultiSelectKey">
+            <summary>
+            触发行选中的按键
+            </summary>
+        </member>
+        <member name="F:IDControls.MultiSelectKey.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:IDControls.MultiSelectKey.shiftKey">
+            <summary>
+            按下shiftKey
+            </summary>
+        </member>
+        <member name="F:IDControls.MultiSelectKey.ctrlKey">
+            <summary>
+            按下ctrlKey
+            </summary>
+        </member>
+        <member name="F:IDControls.MultiSelectKey.altKey">
+            <summary>
+            按下altKey
+            </summary>
+        </member>
+        <member name="T:IDControls.MultiSelectMode">
+            <summary>
+            触发行选中的模式
+            </summary>
+        </member>
+        <member name="F:IDControls.MultiSelectMode.SelectOnCheckBoxClickOnly">
+            <summary>
+            只有选中checkbox才有效
+            </summary>
+        </member>
+        <member name="F:IDControls.MultiSelectMode.SelectOnRowClick">
+            <summary>
+            只要点击行就有效
+            </summary>
+        </member>
+        <member name="T:IDControls.TextDirection">
+            <summary>
+            文字方向
+            </summary>
+        </member>
+        <member name="F:IDControls.TextDirection.LeftToRight">
+            <summary>
+            左到右
+            </summary>
+        </member>
+        <member name="F:IDControls.TextDirection.RightToLeft">
+            <summary>
+            右到左
+            </summary>
+        </member>
+        <member name="T:IDControls.SortIconsPosition">
+            <summary>
+            排序图标位置
+            </summary>
+        </member>
+        <member name="F:IDControls.SortIconsPosition.Vertical">
+            <summary>
+            垂直
+            </summary>
+        </member>
+        <member name="F:IDControls.SortIconsPosition.Horizontal">
+            <summary>
+            水平
+            </summary>
+        </member>
+        <member name="T:IDControls.SortAction">
+            <summary>
+            触发排序形为的途径
+            </summary>
+        </member>
+        <member name="F:IDControls.SortAction.ClickOnHeader">
+            <summary>
+            点击列名
+            </summary>
+        </member>
+        <member name="F:IDControls.SortAction.ClickOnSortIcons">
+            <summary>
+            点击排序图标
+            </summary>
+        </member>
+        <member name="T:IDControls.SortOrder">
+            <summary>
+            排序类型
+            </summary>
+        </member>
+        <member name="F:IDControls.SortOrder.Asc">
+            <summary>
+            升序
+            </summary>
+        </member>
+        <member name="F:IDControls.SortOrder.Desc">
+            <summary>
+            降序
+            </summary>
+        </member>
+        <member name="T:IDControls.TextAlign">
+            <summary>
+            文本位置
+            </summary>
+        </member>
+        <member name="F:IDControls.TextAlign.left">
+            <summary>
+            居左
+            </summary>
+        </member>
+        <member name="F:IDControls.TextAlign.center">
+            <summary>
+            居中
+            </summary>
+        </member>
+        <member name="F:IDControls.TextAlign.right">
+            <summary>
+            居右
+            </summary>
+        </member>
+        <member name="T:IDControls.RequestParamName">
+            <summary>
+            jqGrid向后台传递的参数
+            </summary>
+        </member>
+        <member name="F:IDControls.RequestParamName.Rows">
+            <summary>
+            每页显示记录数
+            </summary>
+        </member>
+        <member name="F:IDControls.RequestParamName.CurrentPage">
+            <summary>
+            当前页码
+            </summary>
+        </member>
+        <member name="F:IDControls.RequestParamName.SortID">
+            <summary>
+            排序依据字段名
+            </summary>
+        </member>
+        <member name="F:IDControls.RequestParamName.SortOrder">
+            <summary>
+            排序类型
+            </summary>
+        </member>
+        <member name="T:IDControls.SignJQGrid">
+            <summary>
+            标识jqGrid的字符串
+            (它会以querystring的方式传递给服务器，用以标识，当前请求是jqGrid发出的请求)
+            </summary>
+        </member>
+        <member name="F:IDControls.SignJQGrid.jqGridRequest">
+            <summary>
+            标识是否由jqGrid发起请求
+            </summary>
+        </member>
+        <member name="T:IDControls.JQEventType">
+            <summary>
+            JQGrid的事件类型（在ideasoft.js中定义的gridComplete、resizeStart等不在此列)
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.None">
+            <summary>
+            未定义
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.ondblClickRow">
+            <summary>
+            双击行,传递参数：rowid, iRow, iCol, e
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.onHeaderClick">
+            <summary>
+            表头被点击,传递参数：gridstate
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.onCellSelect">
+            <summary>
+            单元格被选中,传递参数：rowid,iCol, cellcontent,e
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.onRightClickRow">
+            <summary>
+            右键选中行,传递参数：rowid, iRow, iCol, e
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.onSelectAll">
+            <summary>
+            全选事件,传递参数：aRowids,status 
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.onSelectRow">
+            <summary>
+            选中行,传递参数：rowid,status
+            </summary>
+        </member>
+        <member name="F:IDControls.JQEventType.beforeRequest">
+            <summary>
+            发出数据请求前,传递参数：无
+            </summary>
+        </member>
+        <member name="T:IDControls.TreeGridMode">
+            <summary>
+            JQGrid树型GRID的数据源格式一般分为nested和adjacency
+            </summary>
+        </member>
+        <member name="T:IDControls.JQGrid">
+            <summary>
+            jqGrid的封装版本
+            </summary>
+        </member>
+        <member name="M:IDControls.JQGrid.CheckColumnsSetted">
+            <summary>
+            检查是否没有设置列
+            </summary>
+        </member>
+        <member name="M:IDControls.JQGrid.GetRequestParams">
+            <summary>
+            获取客户端传递到服务端的参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGrid.RegisterJsToPage">
+            <summary>
+            注册JS到页面
+            </summary>
+        </member>
+        <member name="M:IDControls.JQGrid.GetStartupJavascript">
+            <summary>
+            生成启动脚本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGrid.GetStartupOptions">
+            <summary>
+            生成启动脚本中的配置参数
+            </summary>
+            <param name="subGrid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGrid.RenderGridHtml(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            输出表格容器
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.JQGrid.RenderPagerHtml(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            输出分页栏容器
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.JQGrid.RenderHiddenControl(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            输出隐藏控件
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:IDControls.JQGrid.InitJQGrid">
+            <summary>
+            第一次进入页面或回发后，保留被选中行的选中状态、对JQGrid进行一些处理(样式)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGrid.GetJQuerySubmit">
+            <summary>
+            当页面提交（回发）时，将选择的行及数据存到hidden中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGrid.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            加载被选中的行数据
+            </summary>
+            <param name="postDataKey"></param>
+            <param name="postCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGrid.RaisePostDataChangedEvent">
+            <summary>
+            触发被选中行改变的事件
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.CultureInfo">
+            <summary>
+            获取当前语言环境 zh|en
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.Params">
+            <summary>
+            获取客户端传递到服务器的参数
+            (目前仅支持page,rows,sidx,sord等4个参数，其它的参数请自行获取)
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.IsJQGridRequest">
+            <summary>
+            是否是jqGrid发起的请求
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.SelectedItem">
+            <summary>
+            获取被选中行
+            (第一个string表示行的ID，第二个string表示BasicSetting.SortName的值)
+            所有的string均以,号分隔
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.CurrentPageIndex">
+            <summary>
+            获取表格当前是第几页
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.PageSize">
+            <summary>
+            获取表格每页显示记录数
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.SortName">
+            <summary>
+            获取表格排序字段
+            </summary>
+        </member>
+        <member name="P:IDControls.JQGrid.SortOrder">
+            <summary>
+            获取表格排序类型
+            </summary>
+        </member>
+        <member name="T:IDControls.AppearanceSettings">
+            <summary>
+            外观设置
+            </summary>
+        </member>
+        <member name="T:IDControls.BasicSettings">
+            <summary>
+            jqGrid基本设置项
+            </summary>    
+        </member>
+        <member name="P:IDControls.BasicSettings.DataUrl">
+            <summary>
+            数据来源地址
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.UsePercentColWidth">
+            <summary>
+            是否使用百分比列宽（当设为true时，按照列宽占所有列宽之和的百分比来分配列宽）
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.RequestMethod">
+            <summary>
+            页面请求类型
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.ShowToolBar">
+            <summary>
+            是否显示工具栏
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.ViewRecords">
+            <summary>
+            是否显示总记录数
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.Caption">
+            <summary>
+            定义表格名称
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.MultiSelect">
+            <summary>
+            是否启用多行选择
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.MultiSelectKey">
+            <summary>
+            触发行选中的键盘按键
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.MultiSelectMode">
+            <summary>
+            触发行选中的行为模式
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.MultiSelectWidth">
+            <summary>
+            当multiselect为true时设置multiselect列宽度
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.TreeGrid">
+            <summary>
+            开启或者禁用树形grid的模式
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.TreeGridMode">
+            <summary>
+            JQGrid树型GRID的数据源格式
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.ExpandColumn">
+            <summary>
+            指定那列来展开tree grid，默认为第一列，只有在treeGrid为true时起作用
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.ExpandColClick">
+            <summary>
+            当为true时，点击展开行的文本时，treeGrid就能展开或者收缩，不仅仅是点击图片
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.AutoLoad">
+            <summary>
+            打开页面后是否自动加载数据
+            </summary>
+        </member>
+        <member name="P:IDControls.BasicSettings.AutoSaveJQGridFilters">
+            <summary>
+            当控件所在页面发生回发时，是否保存控件的查询条件
+            </summary>
+        </member>
+        <member name="T:IDControls.JQGridColumn">
+            <summary>
+            jqGrid的列定义（包括colNames和colModels)
+            </summary>
+        </member>
+        <member name="M:IDControls.JQGridColumnCollection.GetColNames">
+            <summary>
+            生成colNames的配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDControls.JQGridColumnCollection.ToString">
+            <summary>
+            生成colModels的配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IDControls.JQGridEvent">
+            <summary>
+            jqGrid的事件定义
+            </summary>
+        </member>
+        <member name="T:IDControls.JsonReaderSettings">
+            <summary>
+            Json格式解析器，用于数据与列等信息之间的映射\r\n
+            (特别注意:该类与数据库并无任何关系，不可用于DataTable->json等的转换)\r\n
+            </summary>
+        </member>
+        <member name="M:IDControls.JsonReaderSettings.ToString">
+            <summary>
+            格式化成json字符串
+            (由于JsonConvert不能格式化此对象，因此采用拼接字符串的形式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IDControls.PagerSettings">
+            <summary>
+            jqGrid分页设置项
+            </summary>
+        </member>
+        <member name="T:IDControls.SortSettings">
+            <summary>
+            排序设置
+            </summary>
+        </member>
+        <member name="T:IDControls.ToolbarSettings">
+            <summary>
+            jqGrid工具栏设置项
+            </summary>    
+        </member>
+        <member name="T:IDControls.QueryData">
+            <summary>
+            查询字符串设置,将会以post的形式提交
+            </summary>
+        </member>
+        <member name="T:IDControls.QueryDataCollection">
+            <summary>
+            QueryData集合
+            </summary>
+        </member>
+        <member name="M:IDControls.QueryDataCollection.ToString">
+            <summary>
+            生成colModels的配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:IDControls.IDTime.Width">
+            <summary>
+            空间宽度
+            </summary>
+        </member>
+        <member name="M:IDControls.IDTime.Clear">
+            <summary>
+            清空日期控件
+            </summary>
+        </member>
+        <member name="M:IDControls.IDTime.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDTime.Hour">
+            <summary>
+            小时(默认0)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDTime.MinHour">
+            <summary>
+            最小可选小时
+            </summary>
+        </member>
+        <member name="P:IDControls.IDTime.MaxHour">
+            <summary>
+            最大可选小时
+            </summary>
+        </member>
+        <member name="P:IDControls.IDTime.Minute">
+            <summary>
+            分钟(默认0)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDTime.Second">
+            <summary>
+            秒(默认0)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDTime.SelectSecond">
+            <summary>
+            选择秒(默认false，只选择时分)
+            </summary>
+        </member>
+        <member name="F:IDControls.IDSelectBtn.onclick">
+            <summary>
+            onclick方法
+            </summary>
+        </member>
+        <member name="M:IDControls.IDSelectBtn.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.Config">
+            <summary>
+            Config 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.ConfigHandler">
+            <summary>
+            Config 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.Handler">
+            <summary>
+            Handler 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.CrawlerHandler">
+            <summary>
+            Crawler 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.ListFileManager">
+            <summary>
+            FileManager 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.NotSupportedHandler">
+            <summary>
+            NotSupportedHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.PathFormatter">
+            <summary>
+            PathFormater 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IDControls.Custom.RichTextBox.Core.UploadHandler">
+            <summary>
+            UploadHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="P:IDControls.Custom.RichTextBox.Core.UploadConfig.PathFormat">
+            <summary>
+            文件命名规则
+            </summary>
+        </member>
+        <member name="P:IDControls.Custom.RichTextBox.Core.UploadConfig.UploadFieldName">
+            <summary>
+            上传表单域名称
+            </summary>
+        </member>
+        <member name="P:IDControls.Custom.RichTextBox.Core.UploadConfig.SizeLimit">
+            <summary>
+            上传大小限制
+            </summary>
+        </member>
+        <member name="P:IDControls.Custom.RichTextBox.Core.UploadConfig.AllowExtensions">
+            <summary>
+            上传允许的文件格式
+            </summary>
+        </member>
+        <member name="P:IDControls.Custom.RichTextBox.Core.UploadConfig.Base64">
+            <summary>
+            文件是否以 Base64 的形式上传
+            </summary>
+        </member>
+        <member name="P:IDControls.Custom.RichTextBox.Core.UploadConfig.Base64Filename">
+            <summary>
+            Base64 字符串所表示的文件名
+            </summary>
+        </member>
+        <member name="F:IDControls.IDButton.Width">
+            <summary>
+            按钮宽度
+            </summary>
+        </member>
+        <member name="M:IDControls.IDButton.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            重写Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="P:IDControls.IDButton.IsNarrow">
+            <summary>
+            是否为窄边按钮(为窄边按钮时，文本和图片的边距为4px；否则为宽边按钮，文本和图片的边距为8px)
+            </summary>
+        </member>
+        <member name="P:IDControls.IDHidden.Attributes">
+            <summary>
+            自定义属性
+            </summary>
+        </member>
+        <member name="P:IDControls.IDText.Length">
+            <summary>
+            允许输入的字节长度
+            </summary>
+        </member>
+        <member name="P:IDControls.IDText.DecimalPlace">
+            <summary>
+            当控件为数字类型时，允许的小数位数。
+            当为-1时，不显示小数位数。
+            当为0时，限制为整数
+            当大于0时，限制为相应小数位的小数
+            </summary>
+        </member>
+        <member name="P:IDControls.IDText.DisplayType">
+            <summary>
+            内容显示模式。仅当SkinID="Number"时生效。
+            当显示模式为NumberDisplayType.Accounting时，按照千分位显示数字内容，如1000应显示成1,000.
+            </summary>
+        </member>
+        <member name="P:IDControls.IDText.NumberValue">
+            <summary>
+            数字值，只读属性
+            当SkinID等于Number时，返回去掉逗号的值,
+            当SkinID不等于Number时，返回空字符串
+            </summary>
+        </member>
+        <member name="T:IDControls.IDText.NumberDisplayType">
+            <summary>
+            数字显示模式
+            </summary>
+        </member>
+    </members>
+</doc>

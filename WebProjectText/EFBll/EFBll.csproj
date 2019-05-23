@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A86B3697-87F9-4ABD-8589-FC0B09C18623}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFBll</RootNamespace>
+    <AssemblyName>EFBll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountCtrl.cs" />
+    <Compile Include="Account\IAccountCtrl.cs" />
+    <Compile Include="Area\AreaCtrl.cs" />
+    <Compile Include="Area\IAreaCtrl.cs" />
+    <Compile Include="City\CityCtrl.cs" />
+    <Compile Include="City\ICityCtrl.cs" />
+    <Compile Include="Page\IPageCtrl.cs" />
+    <Compile Include="Page\PageCtrl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role\IRoleCtrl.cs" />
+    <Compile Include="Role\RoleCtrl.cs" />
+    <Compile Include="SysBasic\ISysBasicCity.cs" />
+    <Compile Include="SysBasic\SysBasicCity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4e15f0f1-6b2e-41ec-a813-aa1ea16dfcee}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFDal\EFDal.csproj">
+      <Project>{cb1250c8-c5b6-4a78-bfb0-9beaf7e05fd4}</Project>
+      <Name>EFDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{15421b04-5333-4f64-ad96-e425c781473c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

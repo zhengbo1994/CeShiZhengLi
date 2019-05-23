@@ -1,0 +1,6 @@
+﻿#divEmployeeAssignForCheck_AutoAssign input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}
+#divEmployeeAssignForCheck_ManualAssign input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}

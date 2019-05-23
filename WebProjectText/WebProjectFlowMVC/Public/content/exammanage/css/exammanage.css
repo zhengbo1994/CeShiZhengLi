@@ -1,0 +1,7 @@
+﻿#divMakeExamPlan_AutoAssign input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}
+
+#divMakeExamPlan_ManualAssign input[type='text'], input[type='file'], select, textarea {
+    width: 100%;
+}

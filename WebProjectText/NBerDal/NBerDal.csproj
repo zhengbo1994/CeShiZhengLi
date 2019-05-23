@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37CC28B9-C9D3-46B4-8836-548F2C840DF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NBerDal</RootNamespace>
+    <AssemblyName>NBerDal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="IDCommon">
+      <HintPath>..\packages\IDCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="IDControls">
+      <HintPath>..\packages\IDControls.dll</HintPath>
+    </Reference>
+    <Reference Include="IDData">
+      <HintPath>..\packages\IDData.dll</HintPath>
+    </Reference>
+    <Reference Include="NBear.Common">
+      <HintPath>..\packages\NBear.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NBear.Data">
+      <HintPath>..\packages\NBear.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\packages\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.DDF">
+      <HintPath>..\packages\NPOI.DDF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HPSF">
+      <HintPath>..\packages\NPOI.HPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HSSF">
+      <HintPath>..\packages\NPOI.HSSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.POIFS">
+      <HintPath>..\packages\NPOI.POIFS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Util">
+      <HintPath>..\packages\NPOI.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sys_AccountView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{15421b04-5333-4f64-ad96-e425c781473c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
