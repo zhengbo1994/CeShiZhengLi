@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\AccountCtrl.cs" />
+    <Compile Include="Account\IAccountCtrl.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -47,9 +49,25 @@
       <Project>{eccdfd7f-2dcd-4bc2-bf64-84a14eae8d0c}</Project>
       <Name>DapperDal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EFDal\EFDal.csproj">
+      <Project>{cb1250c8-c5b6-4a78-bfb0-9beaf7e05fd4}</Project>
+      <Name>EFDal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{15421b04-5333-4f64-ad96-e425c781473c}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NBerDal\NBerDal.csproj">
+      <Project>{37cc28b9-c9d3-46b4-8836-548f2c840df8}</Project>
+      <Name>NBerDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositoryDal\RepositoryDal.csproj">
+      <Project>{71f54a8b-158a-4815-adb3-d9475e182f3a}</Project>
+      <Name>RepositoryDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlDal\SqlDal.csproj">
+      <Project>{8a4326f0-df98-4998-a445-2fd38140c243}</Project>
+      <Name>SqlDal</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
